@@ -1,0 +1,1 @@
+   UserMode_GetCurrentTable () : tableNo     UserMode_GetCurrentTable () : longint          DESCRIPTION       Returns the table number that is currently being displayed.       A 0 is returned if the current process is not showing a UserMode window.      

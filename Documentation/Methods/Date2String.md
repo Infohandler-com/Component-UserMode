@@ -1,0 +1,1 @@
+   Method: Date2String ( date {; formatStr} ) : formated date as string     Method: Date2String ( date {; text} ) : text           Supported formats: mm, m1, month, mon, dd, d1, day, dayShort, yyyy, yy       Defaults to "mm/dd/yyyy".       If a date of !00/00/00! is passed then a blank string is returned.  

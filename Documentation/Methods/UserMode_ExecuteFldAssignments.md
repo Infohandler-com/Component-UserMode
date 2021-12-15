@@ -1,0 +1,1 @@
+   UserMode_ExecuteFldAssignments (assignmentDetailsObj) : fieldAuditObject     UserMode_ExecuteFldAssignments (object) : object         DESCRIPTION       Performs all the assigments on the currently loaded record based on the object.       Returns an audit object that contains before/after values.      

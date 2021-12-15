@@ -1,0 +1,404 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 996,
+	"windowMinHeight": 250,
+	"width": 996,
+	"height": 246,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onOutsideCall",
+		"onActivate",
+		"onDoubleClick",
+		"onDragOver",
+		"onCloseBox",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "596pt",
+		"paperHeight": "842pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"Line1": {
+					"type": "line",
+					"top": 0,
+					"left": 431,
+					"height": 68
+				},
+				"Line": {
+					"type": "line",
+					"top": 0,
+					"left": 146,
+					"height": 68
+				},
+				"Rectangle": {
+					"type": "rectangle",
+					"top": 68,
+					"left": -2,
+					"width": 998,
+					"height": 22,
+					"sizingX": "grow",
+					"fill": "transparent",
+					"stroke": "#AAAAAA"
+				},
+				"Listbox": {
+					"type": "listbox",
+					"top": 89,
+					"left": 2,
+					"width": 994,
+					"height": 157,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"resizingMode": "legacy",
+					"listboxType": "currentSelection",
+					"dataSource": "UserModeLB",
+					"movableRows": false,
+					"dragging": "custom",
+					"rowHeight": "20px",
+					"table": 3,
+					"highlightSet": "UserSet",
+					"horizontalLineStroke": "#AAAAAA",
+					"verticalLineStroke": "#AAAAAA",
+					"stroke": "#000000",
+					"fill": "#FFFFFF",
+					"alternateFill": "#EEEEEE",
+					"rowStrokeSource": "ListBoxStil",
+					"fontFamily": "Lucida Grande",
+					"fontSize": 12,
+					"borderStyle": "none",
+					"method": "ObjectMethods/Listbox.4dm",
+					"events": [
+						"onClick",
+						"onDoubleClick",
+						"onBeginDragOver"
+					],
+					"columns": [
+						{
+							"name": "Spalte1",
+							"width": 979,
+							"minWidth": 10,
+							"maxWidth": 32000,
+							"stroke": "#000000",
+							"fill": "#FFFFFF",
+							"alternateFill": "#EEEEEE",
+							"textAlign": "automatic",
+							"verticalAlign": "automatic",
+							"fontFamily": "Lucida Grande",
+							"fontSize": 13,
+							"events": [
+								"onDoubleClick",
+								"onDataChange"
+							],
+							"header": {
+								"name": "Kopf1",
+								"text": "Kopf1",
+								"dataSource": "Kopf1",
+								"stroke": "#000000",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 13
+							},
+							"footer": {
+								"name": "Footer1",
+								"stroke": "#000000",
+								"fill": "#FFFFFF",
+								"textAlign": "automatic",
+								"verticalAlign": "automatic",
+								"fontFamily": "Lucida Grande",
+								"fontSize": 12
+							}
+						}
+					]
+				},
+				"Button10": {
+					"type": "button",
+					"top": 0,
+					"left": 367,
+					"width": 56,
+					"height": 67,
+					"dataSource": "nvOrder",
+					"shortcutKey": "y",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonSort",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/OrderBy.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/Button10.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button12": {
+					"type": "button",
+					"top": 0,
+					"left": 155,
+					"width": 64,
+					"height": 67,
+					"dataSource": "nvAll",
+					"shortcutKey": "=",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonAll",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowAll.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/Button12.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"UserMode_NewButton": {
+					"type": "button",
+					"top": 0,
+					"left": 13,
+					"width": 56,
+					"height": 67,
+					"dataSource": "nvNeu",
+					"shortcutKey": "n",
+					"shortcutAccel": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonNew",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/NewRecord.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/UserMode_NewButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UserMode_DeleteButton": {
+					"type": "button",
+					"top": 0,
+					"left": 76,
+					"width": 56,
+					"height": 67,
+					"dataSource": "nvDelete",
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonDelete",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/DeleteSelection.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/UserMode_DeleteButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Button15": {
+					"type": "button",
+					"top": 0,
+					"left": 233,
+					"width": 56,
+					"height": 67,
+					"dataSource": "nvSelection",
+					"shortcutKey": "-",
+					"shortcutAccel": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonSelection",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/ShowSubset.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/Button15.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UserMode_QueryButton": {
+					"type": "button",
+					"top": 0,
+					"left": 300,
+					"width": 60,
+					"height": 67,
+					"dataSource": "nvQuery",
+					"shortcutKey": "y",
+					"shortcutAccel": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonQuery",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Query.png",
+					"iconFrames": 4,
+					"style": "toolbar",
+					"method": "ObjectMethods/UserMode_QueryButton.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"UserMode_ReportButton": {
+					"type": "button",
+					"top": 1,
+					"left": 441,
+					"width": 61,
+					"height": 67,
+					"dataSource": "nvPrint",
+					"shortcutKey": "p",
+					"shortcutAccel": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": ":xliff:UserMode ButtonPrint",
+					"icon": "/RESOURCES/Images/Buttons/LightGrey/Print.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "toolbar",
+					"method": "ObjectMethods/UserMode_ReportButton.4dm",
+					"events": [
+						"onClick",
+						"onAlternateClick"
+					]
+				},
+				"PopUp Drop Down": {
+					"type": "dropdown",
+					"top": 12,
+					"left": 805,
+					"width": 179,
+					"height": 23,
+					"sizingX": "move",
+					"dataSource": "ar_UserMode_TableNames",
+					"class": "Default",
+					"method": "ObjectMethods/PopUp Drop Down.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"UserMode_ActionButton": {
+					"type": "button",
+					"top": 0,
+					"left": 510,
+					"width": 56,
+					"height": 67,
+					"dataSource": "nvExecute",
+					"shortcutKey": "r",
+					"shortcutAccel": true,
+					"shortcutShift": true,
+					"class": "Buttons",
+					"focusable": false,
+					"text": "Action",
+					"icon": "/RESOURCES/Images/library/Execute.png",
+					"iconFrames": 4,
+					"popupPlacement": "separated",
+					"style": "toolbar",
+					"method": "ObjectMethods/UserMode_ActionButton.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"tbl_selectedRecs": {
+					"type": "input",
+					"top": 71,
+					"left": 224,
+					"width": 550,
+					"height": 16,
+					"sizingX": "grow",
+					"dataSource": "tbl_selectedRecs",
+					"stroke": "#000000",
+					"class": "Buttons",
+					"textAlign": "center",
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 15,
+					"left": 746,
+					"width": 51,
+					"height": 17,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Table:"
+				},
+				"PopUp Drop Down1": {
+					"type": "dropdown",
+					"top": 37,
+					"left": 805,
+					"width": 179,
+					"height": 23,
+					"sizingX": "move",
+					"dataSource": "ar_UserMode_TableViews",
+					"class": "Default",
+					"method": "ObjectMethods/PopUp Drop Down1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 40,
+					"left": 746,
+					"width": 51,
+					"height": 17,
+					"sizingX": "move",
+					"textAlign": "right",
+					"text": "Views:"
+				},
+				"Button": {
+					"type": "button",
+					"top": 1,
+					"left": 1000,
+					"width": 65,
+					"height": 19,
+					"sizingX": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "w",
+					"shortcutAccel": true,
+					"text": "Cmd w",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "Ebene 1",
+		"defaultView": "Ebene 1",
+		"views": {
+			"Ebene 1": {},
+			"Ebene 2": {
+				"objects": [
+					"tbl_selectedRecs"
+				]
+			},
+			"Ebene 3": {},
+			"Ebene 4": {},
+			"Ebene 5": {},
+			"Ebene 6": {},
+			"Ebene 7": {},
+			"Ebene 8": {},
+			"Ebene 9": {}
+		}
+	}
+}

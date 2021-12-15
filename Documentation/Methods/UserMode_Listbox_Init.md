@@ -1,0 +1,1 @@
+   ----------------------------------------------------     Anwender (OS): Thomas Maul     Datum und Zeit: 26.02.09     ----------------------------------------------------     Methode: UserMode_Listbox_init     Internal - switches table. Called in on Load and from popup              Parameter  -  none     ----------------------------------------------------  

@@ -1,0 +1,1 @@
+   UserMode_AddUtilityMenuItem (MenuItemTitle; MethodToExecute)      UserMode_AddUtilityMenuItem (text; text)           DESCRIPTION       Adds another item so that it will up on the UTILITY menu.       The method must be callable from the component.      

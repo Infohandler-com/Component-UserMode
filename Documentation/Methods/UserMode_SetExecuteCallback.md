@@ -1,0 +1,1 @@
+   UserMode_SetExecuteCallback (callbackMethod)     UserMode_SetExecuteCallback (text)          DESCRIPTION       The callback method to use when the "Apply to Selection..."       choice is made from the action menu.       If "4D Default" is the callback then 4D's apply to selection       dialog will be shown.      

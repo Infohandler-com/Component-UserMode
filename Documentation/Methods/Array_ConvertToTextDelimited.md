@@ -1,0 +1,1 @@
+   Array_ConvertToTextDelimited (arrayPtr{; delimiter}) : delimitedText     Array_ConvertToTextDelimited (pointer{; text}) : text          DESCRIPTION       Converts the passed text array into a delimited       text string. The delimiter defaults to "," if not supplied.      

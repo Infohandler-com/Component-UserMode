@@ -1,0 +1,1 @@
+   UserMode_AddSpecialAction (tablePtr, actionName, callbackMethod)     UserMode_AddSpecialAction (pointer, text, text)         DESCRIPTION             

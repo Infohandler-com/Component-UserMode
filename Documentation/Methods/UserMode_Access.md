@@ -1,0 +1,1 @@
+   UserMode_Access (accessTag, permissionArrPtr)     UserMode_Access (text, pointer)         DESCRIPTION       Allows to specify the Access rights       Valid access tags: Show, Report, Delete, Import, Export, New, Modify, Execute         

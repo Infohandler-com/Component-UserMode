@@ -1,0 +1,1 @@
+   METHOD: TS_GetTime     $1 = Date and time in a Longint     $0 = time  

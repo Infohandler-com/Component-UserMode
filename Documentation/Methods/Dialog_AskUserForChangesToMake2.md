@@ -1,0 +1,1 @@
+   Dialog_AskUserForChangesToMake2 () : object          DESCRIPTION       Shows the change dialog         ----------------------------------------------------     HISTORY       Created by: DB (10/11/2016)     ----------------------------------------------------  

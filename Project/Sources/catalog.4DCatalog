@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="UserMode_Component - GitHub Repository" uuid="8A59ABD25BA8E14EABA77A5EE5E1B2CB" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="bTable_1" uuid="D58CAC88AE6E459C92156FCCD87E8452" id="1">
+		<field name="guid" uuid="E8C168B3C9EF4C2DBE2B7B3B0F24B2A3" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Field_2_d" uuid="05F1EC19EE4641049BB907F43976A6DC" type="8" never_null="true" id="2"/>
+		<field name="Field_3_h" uuid="F053D90B19B440D9AF877BB10DE24279" type="9" never_null="true" id="3"/>
+		<field name="Field_4_a" uuid="60020EA7724D4B80A9426D40030ED364" type="10" limiting_length="55" never_null="true" id="4"/>
+		<field name="Field_5_txt" uuid="86993875B84E43A682EB8108049C9040" type="10" never_null="true" id="5"/>
+		<field name="Field_6_I" uuid="26CEC44D86D94259A590BBD9E1FA90FF" type="3" never_null="true" id="6"/>
+		<field name="Field_7_L" uuid="18AEDF462C044E32A16EBA9EB2502B70" type="4" never_null="true" id="7"/>
+		<field name="Field_8_R" uuid="A4F5835C08904D0DB1034DC02C00A90D" type="6" never_null="true" id="8"/>
+		<field name="Field_9_float" uuid="B3BF00FDDE3443F0857F7980C78FDFD4" type="6" never_null="true" id="9"/>
+		<field name="Field_10_boolean" uuid="4A4A2FE3FA174DC28B2CC53DA7C8C3E2" type="1" never_null="true" id="10"/>
+		<field name="Field_11_I64" uuid="53E5EA8FBFD54C968C21DC5C97C9F9C4" type="5" never_null="true" id="11"/>
+		<field name="test_DTS" uuid="503FAF7A3FEB4863A0FB7338A046629D" type="10" limiting_length="255" never_null="true" id="12"/>
+		<field name="TEST2_TS" uuid="CE88C7B09A0542E3B3D0C8AD6F70B855" type="4" never_null="true" id="13"/>
+		<primary_key field_name="guid" field_uuid="E8C168B3C9EF4C2DBE2B7B3B0F24B2A3"/>
+		<table_extra input_form="Input" output_form="Form1">
+			<editor_table_info displayable_fields_count="13">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="54.19921875" top="48.94140625" width="155.74609375" height="316.23046875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="aTable_2" uuid="5B0EF6B2592E45F7A7DB47CEA0F11FA7" id="2">
+		<field name="guid" uuid="F5FF96AB7EA34F96B9C8FCADA60145D6" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="BED0B1C89DAC42039C704353FCC4300B" type="10" never_null="true" id="2"/>
+		<field name="Field_3" uuid="AEA4A23D8341481C9EA3C1AD6BB32BD2" type="9" never_null="true" id="3"/>
+		<field name="Field_4" uuid="5E1474B870044618A2D6178B0DA27CCB" type="8" never_null="true" id="4"/>
+		<field name="Field_5" uuid="997BEA2B50394BAE8DFDA1D16F2C4E82" type="8" never_null="true" id="5"/>
+		<field name="Field_6" uuid="38A8682BD674472D997350E5DB71C46A" type="1" never_null="true" id="6"/>
+		<field name="Field_7" uuid="C740FA00D570488B8F177A7CE5C40FDE" type="1" never_null="true" id="7"/>
+		<field name="Field_8" uuid="C287E4CF4D354E9F997C76CEFFF585A5" type="10" never_null="true" id="8"/>
+		<field name="Field_9" uuid="08EEF5744D374A37900554CAECB74FFF" type="9" never_null="true" id="9"/>
+		<field name="Field_10" uuid="B91E8C36F55D4E878E4C8E9294FAC3D9" type="9" never_null="true" id="10"/>
+		<field name="Field_11" uuid="8C7D27C964D64E56B7B5DFB0690C1558" type="4" never_null="true" id="11"/>
+		<field name="Field_12" uuid="70627C406B6249758D6BA4BF7DF35514" type="4" never_null="true" id="12"/>
+		<primary_key field_name="guid" field_uuid="F5FF96AB7EA34F96B9C8FCADA60145D6"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="18">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="240" top="40" width="120" height="421.96875"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="cTable_3" uuid="EA56BE9FE1104067858D4A9BCFD7EA2F" id="3">
+		<field name="GUID" uuid="6A11DA0A0B124070AE196AAE6360E079" type="10" unique="true" autogenerate="true" store_as_UUID="true" not_null="true" id="1"/>
+		<field name="Field_2" uuid="BB3B274F9778427CA5B4F0887377E5E0" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="Field_3" uuid="E58ECA64F4E9469795F9A1367C51A822" type="10" limiting_length="40" never_null="true" id="3"/>
+		<field name="Field_4" uuid="736609CED6544CA68F998B84CDDC9A3A" type="10" limiting_length="255" never_null="true" id="4"/>
+		<field name="Field_5" uuid="2EB85017BA1441EAB1BB26D2430DECE6" type="10" limiting_length="255" never_null="true" id="5"/>
+		<field name="Field_6" uuid="12911BBA6E2A40018F7139669945AD3B" type="10" never_null="true" id="6"/>
+		<primary_key field_name="GUID" field_uuid="6A11DA0A0B124070AE196AAE6360E079"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="12">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="440" top="40" width="120" height="308.89453125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Treatments" uuid="130F00DB68CE4BDAB38085A9A246859C" id="4" leave_tag_on_delete="true">
+		<field name="Treatments_ID" uuid="030C095B374F43FEB5BAA1F616D1F056" type="4" autosequence="true" never_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="District_ID" uuid="73D10FF432E94A789C74A7865D2F075C" type="4" never_null="true" id="2">
+			<field_extra position="2">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Student_Calendars_ID" uuid="CCF72A0B36764253A7D344C3274C6B7D" type="4" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="Student_Key" uuid="68CE392590C3420EB1D4FBBB2AE462AE" type="4" never_null="true" id="4">
+			<field_extra position="4">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Status" uuid="A1F98D8D90DB4BAC96F40CB42DA5C347" type="10" limiting_length="4" never_null="true" id="5">
+			<field_extra position="5"/>
+		</field>
+		<field name="Service_Provided_Status" uuid="5DCA64C7A9D0479E8E07D72D22D90BAF" type="10" limiting_length="3" never_null="true" id="6">
+			<field_extra position="6"/>
+		</field>
+		<field name="Service_Provided_By" uuid="6F334085B24C49D5BF193BB8901C9B35" type="4" never_null="true" id="7">
+			<field_extra position="7">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="License_Area" uuid="6A6E0E332F1544C08591EACA9E1A7A80" type="10" limiting_length="30" never_null="true" id="8">
+			<field_extra position="8"/>
+		</field>
+		<field name="HIPAA_Claim_Status" uuid="F7AFA5BE6BFA45C0B41640F0FA92EE21" type="10" never_null="true" id="9">
+			<field_extra position="9"/>
+		</field>
+		<field name="Service_Date" uuid="A9E02398ED774923BA5C1F7FB0F3B528" type="8" never_null="true" id="10">
+			<field_extra position="10"/>
+		</field>
+		<field name="ICD_9_Code" uuid="29BB7022213140E6B0F609018524B545" type="10" limiting_length="6" never_null="true" id="11">
+			<field_extra position="11"/>
+		</field>
+		<field name="Service_Code" uuid="D0295FD92BEE451D90BD71CF541B55F6" type="10" limiting_length="6" never_null="true" id="12">
+			<field_extra position="12"/>
+		</field>
+		<field name="Duration" uuid="F2C60E91FC674C0E804CBBE0A8022CDA" type="4" never_null="true" id="13">
+			<field_extra position="13"/>
+		</field>
+		<field name="Units" uuid="F317101EFC1F4CEBA27C0A98A6B426FA" type="4" never_null="true" id="14">
+			<field_extra position="14"/>
+		</field>
+		<field name="Billed_Amount" uuid="9145D94E4B4549BD932C9CB032376C6B" type="6" never_null="true" id="15">
+			<field_extra position="15"/>
+		</field>
+		<field name="Paid_Amount" uuid="CC53100BEBC24DB49C01BDB16E820CA0" type="6" never_null="true" id="16">
+			<field_extra position="16"/>
+		</field>
+		<field name="Amount_Expected" uuid="B5F47244385B40CEA72537E9B2AE61B4" type="6" never_null="true" id="17">
+			<field_extra position="17"/>
+		</field>
+		<field name="Adjustment_Amount" uuid="C28E7E1A82AE48F3A2894842E2B66C86" type="6" never_null="true" id="18">
+			<field_extra position="18"/>
+		</field>
+		<field name="Batch_No" uuid="4D685A917D09473A8295F7E14D4B9B0D" type="4" never_null="true" id="19">
+			<field_extra position="19"/>
+		</field>
+		<field name="Submission_Date" uuid="96198A8B062B4D22BE22081544B9C22D" type="8" never_null="true" id="20">
+			<field_extra position="20"/>
+		</field>
+		<field name="Claim_835_No" uuid="31D898B4950C44B89FCDB7BD227E4C91" type="10" limiting_length="20" never_null="true" id="21">
+			<field_extra position="21"/>
+		</field>
+		<field name="RA_Date" uuid="35632278A1744F7081F4E279D4D57D6B" type="8" never_null="true" id="22">
+			<field_extra position="22"/>
+		</field>
+		<field name="Return_ID" uuid="984C6966D874432BA48271F883F6B790" type="10" limiting_length="60" never_null="true" id="23">
+			<field_extra position="24"/>
+		</field>
+		<field name="Printed" uuid="F14CFDFD82CE40E4B105743A6D87395E" type="10" limiting_length="3" never_null="true" id="24">
+			<field_extra position="25"/>
+		</field>
+		<field name="Treatment_Note" uuid="5AE73A6FA99341F0874DC6DB798D3A25" type="14" never_null="true" id="25">
+			<field_extra position="26"/>
+		</field>
+		<field name="Goals_Address" uuid="0D71AE802EA74E7F96FA7DF6AA548341" type="14" never_null="true" id="26">
+			<field_extra position="27"/>
+		</field>
+		<field name="Created_Date_Time_TS" uuid="327EEA8343D24147A0D5EF54DCF102E9" type="4" never_null="true" id="27">
+			<field_extra position="28"/>
+		</field>
+		<field name="Created_By" uuid="054EB21419EA4C128F82586064878BBD" type="10" limiting_length="20" never_null="true" id="28">
+			<field_extra position="29"/>
+		</field>
+		<field name="Modified_By" uuid="58B85EC65FA54C5AB101CB3DAA9EA383" type="10" limiting_length="20" never_null="true" id="29">
+			<field_extra position="30"/>
+		</field>
+		<field name="Modified_Date_Time_TS" uuid="848FABDC274C4E62804B857F17E31457" type="4" never_null="true" id="30">
+			<field_extra position="31"/>
+		</field>
+		<field name="Treatment_Note_Printed" uuid="53809DD5F4274E6CBCF6757A9CE0DB9F" type="1" never_null="true" id="31">
+			<field_extra position="32"/>
+		</field>
+		<field name="ICD_9_Code_2nd" uuid="6DEF927C7E394AA6B61B81F18A13739D" type="10" limiting_length="6" never_null="true" id="32">
+			<field_extra position="33"/>
+		</field>
+		<field name="GroupSize" uuid="D8978109166A4B329D447F3E93917B8E" type="4" never_null="true" id="33">
+			<field_extra position="34"/>
+		</field>
+		<field name="Response" uuid="E465850E54F84203924C1D1273EC047F" type="10" limiting_length="30" never_null="true" id="34">
+			<field_extra position="35"/>
+		</field>
+		<field name="Plan" uuid="9156F64CB70946C7933FBD0DE395154E" type="10" limiting_length="30" never_null="true" id="35">
+			<field_extra position="36"/>
+		</field>
+		<field name="AREQ_Modified_By" uuid="ED2F6A2B701D4C01A21375DD5CA0C279" type="10" limiting_length="20" never_null="true" id="36">
+			<field_extra position="37"/>
+		</field>
+		<field name="AREQ_Modified_Date_Time_TS" uuid="24A2D58A53594C32A7A125F643777C06" type="4" never_null="true" id="37">
+			<field_extra position="38"/>
+		</field>
+		<field name="AREQ_Modified_By_UserID" uuid="6819B7DE4DE24FAA960C14747EF3298A" type="4" never_null="true" id="38">
+			<field_extra position="39"/>
+		</field>
+		<field name="Printed_Log" uuid="8FFE51E4524E49679D865FAF9C614140" type="1" never_null="true" id="39">
+			<field_extra position="40"/>
+		</field>
+		<field name="AREQ_Modified_Date" uuid="86BB360BF9D945F59494953A0E13BE21" type="8" never_null="true" id="40">
+			<field_extra position="41"/>
+		</field>
+		<field name="Start_Time" uuid="765F3E50739C4202846756F0D44C4E2B" type="9" never_null="true" id="41">
+			<field_extra position="42"/>
+		</field>
+		<field name="Claim_Record_ID" uuid="3CE17C283E554789A45C9CEE1AFB403E" type="4" never_null="true" id="42">
+			<field_extra position="43"/>
+		</field>
+		<field name="LBOD_Code" uuid="1ACFD4C3E23A4E3B9DC128E6A01C652B" type="10" limiting_length="5" never_null="true" id="43">
+			<field_extra position="44"/>
+		</field>
+		<field name="LBOD_Comment" uuid="10939523B6304BAC928FA65F604045EC" type="10" never_null="true" id="44">
+			<field_extra position="45"/>
+		</field>
+		<field name="ERR_Status" uuid="45C40C33282942D098A542CBAA5B76B3" type="10" limiting_length="10" never_null="true" id="45">
+			<field_extra position="46"/>
+		</field>
+		<field name="ERR_Msg" uuid="D4835F27436241FA9B51FA87C6641232" type="14" never_null="true" id="46">
+			<field_extra position="47"/>
+		</field>
+		<field name="Modified_By_UserID" uuid="F56E9BC6F46845E7B3EA8BBCA10F5642" type="4" never_null="true" id="47">
+			<field_extra position="48"/>
+		</field>
+		<field name="ExtraNotBilledTreatment" uuid="EE0D5C343CCA474E898C0A9EA5FCBDD5" type="1" never_null="true" id="48">
+			<field_extra position="49"/>
+		</field>
+		<field name="Reason_Absent" uuid="B36EE245D4AB4AA682DF7C7244B11E14" type="10" limiting_length="30" never_null="true" id="49">
+			<field_extra position="50"/>
+		</field>
+		<field name="School_Year" uuid="E847172F57D84731B8D842980803FC09" type="10" limiting_length="9" never_null="true" id="50">
+			<field_extra position="51"/>
+		</field>
+		<field name="Supervised_Approved" uuid="6C27EB69366E49A992D34CEBF227147B" type="3" never_null="true" id="51">
+			<field_extra position="82"/>
+		</field>
+		<field name="Modifier_Codes" uuid="F7EFE8BFFAFB4539B9A57D3377A08127" type="10" limiting_length="5" never_null="true" id="52">
+			<field_extra position="52"/>
+		</field>
+		<field name="Duplicates_Key" uuid="89A2B14783F04E1D9C4130344849A1D3" type="10" limiting_length="50" never_null="true" id="53">
+			<field_extra position="53"/>
+		</field>
+		<field name="Combined_Record" uuid="9B9AADFCCB9D4CF8BB05B4EF6EFE91BA" type="1" never_null="true" id="54">
+			<field_extra position="54" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="End_Time" uuid="ED73643EC99E4129926498EDCDE8A055" type="9" never_null="true" id="55">
+			<field_extra position="55"/>
+		</field>
+		<field name="Service_NOT_Billable" uuid="1E69B653FA9E4DFDBC1902457897D1D6" type="1" never_null="true" id="56"/>
+		<field name="Paid_Units" uuid="EA3EE02F4FF14D328A0B8A60A6416EA0" type="4" never_null="true" id="57">
+			<field_extra position="57"/>
+		</field>
+		<field name="_History" uuid="123FB730A42C4178BFBD3F26351123C8" type="14" never_null="true" id="58">
+			<field_extra position="58"/>
+		</field>
+		<field name="LBOD_Date" uuid="F658250509B74451BB25FEF0D1E9F7A8" type="8" never_null="true" id="59">
+			<field_extra position="59"/>
+		</field>
+		<field name="Plan_for_Next_Session" uuid="C63B4CFD47CA468DA01D91A1E671AA6A" type="10" never_null="true" id="60"/>
+		<field name="Printed_Log_Date" uuid="3F7A5914D08943AB977F39967C109021" type="8" never_null="true" id="61">
+			<field_extra position="62"/>
+		</field>
+		<field name="Duplicates_Key_no2" uuid="DBBE266355144D84BAFBDB66D84FBE38" type="10" limiting_length="255" never_null="true" id="62">
+			<field_extra position="63"/>
+		</field>
+		<field name="notRFS_Reasons" uuid="589B257FFFB241719131511F71D2ED41" type="14" never_null="true" id="63">
+			<field_extra position="64"/>
+		</field>
+		<field name="Status_LastUpdate" uuid="95BEC43C3BD041F6965C353C1C22309C" type="8" never_null="true" id="64">
+			<field_extra position="65"/>
+		</field>
+		<field name="Status_SubStatus" uuid="E743F2B28D0645ED940CDAC908CC0438" type="10" limiting_length="40" never_null="true" id="65">
+			<field_extra position="66"/>
+		</field>
+		<field name="Status_NumMsgs" uuid="2B74477D09174E33B7934F0CCABCC884" type="3" never_null="true" id="66">
+			<field_extra position="67"/>
+		</field>
+		<field name="InterventionPlan" uuid="F876622B181B435F9F69C3D535DE02B1" type="10" never_null="true" id="67">
+			<field_extra position="68"/>
+		</field>
+		<field name="Has_Valid_PO" uuid="7E7AF15C22FD44C39EA2BF6C7102B466" type="1" never_null="true" id="68">
+			<field_extra position="69"/>
+		</field>
+		<field name="ClaimNo_835_History" uuid="9F0FB9F7CEBC44FF942931E53A15B87F" type="14" never_null="true" id="69">
+			<field_extra position="70"/>
+		</field>
+		<field name="Amount_Allowed" uuid="9E08B2FD55FC414EB0A984EDAFA92FDE" type="6" never_null="true" id="70">
+			<field_extra position="71"/>
+		</field>
+		<field name="StateAdjustRsnCode" uuid="91C7B38DF8454D588BB2CA121E2B8231" type="14" never_null="true" id="71">
+			<field_extra position="72"/>
+		</field>
+		<field name="CheckWriteCutOffDt" uuid="42F9A7FD222A45139313E6106F03E752" type="8" never_null="true" id="72">
+			<field_extra position="73"/>
+		</field>
+		<field name="ToBeReviewed" uuid="445FC945F29F493FA4DA52B6497C086D" type="1" never_null="true" id="73">
+			<field_extra visible="false" position="74"/>
+		</field>
+		<field name="Already_Updated" uuid="68C5D2F61B8949AB9C9BF5A56E7815F2" type="1" never_null="true" id="74">
+			<field_extra position="75"/>
+		</field>
+		<field name="SchoolCalendarNotes" uuid="5514C201052349B2A8133CA869657BCB" type="14" never_null="true" id="75">
+			<field_extra position="76"/>
+		</field>
+		<field name="HasNote" uuid="BF5B282233A644F8A2585427CA74CBB9" type="1" never_null="true" id="76">
+			<field_extra position="77"/>
+		</field>
+		<field name="GUID" uuid="4AE86F9A9E084CC49A8BF337F4742F6E" type="10" unique="true" autogenerate="true" store_as_UUID="true" never_null="true" id="77">
+			<field_extra multi_line="false" position="78">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="MSG_toBeActionedByUser" uuid="D3567BCA0EF9410FA540EA414BB6014F" type="4" never_null="true" id="78">
+			<field_extra position="79"/>
+		</field>
+		<field name="ICD_10_Code" uuid="BBBEDFDE596A473284D23D0D1934F171" type="10" limiting_length="8" never_null="true" id="79">
+			<field_extra position="80"/>
+		</field>
+		<field name="ICD_10_Code_2nd" uuid="78BA9F4297E44D8B904D5872FD5A3189" type="10" limiting_length="8" never_null="true" id="80">
+			<field_extra position="81"/>
+		</field>
+		<field name="Supervised_Approved_UserID" uuid="B5A975BA49504C089346CFC2F549BFDD" type="4" never_null="true" id="81">
+			<field_extra position="83"/>
+		</field>
+		<field name="What_ICD_Code_To_Use" uuid="66882AB790014F6DB01B521E97EA3EA6" type="10" limiting_length="8" never_null="true" id="82"/>
+		<primary_key field_name="GUID" field_uuid="4AE86F9A9E084CC49A8BF337F4742F6E"/>
+		<table_extra trigger_delete="true" input_form="Input" output_form="Output">
+			<comment format="rtf"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+}]]></comment>
+			<comment format="text"><![CDATA[{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+}]]></comment>
+			<editor_table_info displayable_fields_count="85">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="669.7578125" top="11.17578125" width="235" height="1837.9140625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="Treatments_ARCHIVE" uuid="D350F5460C0A465E9DA424DF88C8D370" id="5" leave_tag_on_delete="true">
+		<field name="Treatments_ID" uuid="721FCB4CAFA84913BEC4A216F549C3EA" type="4" autosequence="true" never_null="true" id="1">
+			<field_extra position="1"/>
+		</field>
+		<field name="District_ID" uuid="A19E59EC4A6A41FABEA9A5199B19D523" type="4" never_null="true" id="2">
+			<field_extra position="2">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Student_Calendars_ID" uuid="EAA70EB0DD554E3CBEAEE28D0EC2F0C0" type="4" never_null="true" id="3">
+			<field_extra position="3"/>
+		</field>
+		<field name="Student_Key" uuid="F57AFC18C6154399B8AED1B684B43E2E" type="4" never_null="true" id="4">
+			<field_extra position="4">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="Status" uuid="310B0F8A4FF14B9993C56F8D6EF5F2B5" type="10" limiting_length="4" never_null="true" id="5">
+			<field_extra position="5"/>
+		</field>
+		<field name="Service_Provided_Status" uuid="D944D497D17D48D396DD444F4B06F744" type="10" limiting_length="3" never_null="true" id="6">
+			<field_extra position="6"/>
+		</field>
+		<field name="Service_Provided_By" uuid="BD40F96128764747ADD68DE6C58CF43C" type="4" never_null="true" id="7">
+			<field_extra position="7">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="License_Area" uuid="FC6A84D5EE1748369300D4CB3EA6D690" type="10" limiting_length="30" never_null="true" id="8">
+			<field_extra position="8"/>
+		</field>
+		<field name="HIPAA_Claim_Status" uuid="BBC42169B42E43B28DDFF6D698AC34A9" type="10" never_null="true" id="9">
+			<field_extra position="9"/>
+		</field>
+		<field name="Service_Date" uuid="F58776E36BFC434192A23D323591B73D" type="8" never_null="true" id="10">
+			<field_extra position="10"/>
+		</field>
+		<field name="ICD_9_Code" uuid="10AC1DCB460E4721BF569669EEBF93CF" type="10" limiting_length="6" never_null="true" id="11">
+			<field_extra position="11"/>
+		</field>
+		<field name="Service_Code" uuid="E9F526DF6F4F47689C5A1BA4335812D9" type="10" limiting_length="6" never_null="true" id="12">
+			<field_extra position="12"/>
+		</field>
+		<field name="Duration" uuid="49E2EFF665634196992871091AA5F414" type="4" never_null="true" id="13">
+			<field_extra position="13"/>
+		</field>
+		<field name="Units" uuid="547359D719754B31962ED1060BEA78FB" type="4" never_null="true" id="14">
+			<field_extra position="14"/>
+		</field>
+		<field name="Billed_Amount" uuid="A09DA5CA9E514244B9E06C2B33C9018D" type="6" never_null="true" id="15">
+			<field_extra position="15"/>
+		</field>
+		<field name="Paid_Amount" uuid="224AAF732A8F47B7A0DE61CBE68A7CD1" type="6" never_null="true" id="16">
+			<field_extra position="16"/>
+		</field>
+		<field name="Amount_Expected" uuid="40B1F8BF102D4A1D85BB0393D40D2C41" type="6" never_null="true" id="17">
+			<field_extra position="17"/>
+		</field>
+		<field name="Adjustment_Amount" uuid="674E67B48E7347FB9D485F6D376B0402" type="6" never_null="true" id="18">
+			<field_extra position="18"/>
+		</field>
+		<field name="Batch_No" uuid="A83A095A23EC411380804DCFD9E57089" type="4" never_null="true" id="19">
+			<field_extra position="19"/>
+		</field>
+		<field name="Submission_Date" uuid="02CCEE06F0C34226B96AED64C3F6A28F" type="8" never_null="true" id="20">
+			<field_extra position="20"/>
+		</field>
+		<field name="Claim_835_No" uuid="64B2414FCAEE45DDA57E21B64D0D9AAA" type="10" limiting_length="20" never_null="true" id="21">
+			<field_extra position="21"/>
+		</field>
+		<field name="RA_Date" uuid="62194DC28CEB456FAB39E1A37F4837D1" type="8" never_null="true" id="22">
+			<field_extra position="22"/>
+		</field>
+		<field name="Return_ID" uuid="B0340E5BBB1F49DC96C9D1D1625CC39B" type="10" limiting_length="60" never_null="true" id="23">
+			<field_extra position="23"/>
+		</field>
+		<field name="Printed" uuid="76FE51C7741C416D84DA52441FDB98EB" type="10" limiting_length="3" never_null="true" id="24">
+			<field_extra position="24"/>
+		</field>
+		<field name="Treatment_Note" uuid="E8DB3BF0E83C42AD8F121CB3F0E26836" type="14" never_null="true" id="25">
+			<field_extra position="25"/>
+		</field>
+		<field name="Goals_Address" uuid="26EB062F802544CFA6C41E8F84EAAD90" type="14" never_null="true" id="26">
+			<field_extra position="26"/>
+		</field>
+		<field name="Created_Date_Time_TS" uuid="9EFCCFE495954A4288285896247C24E7" type="4" never_null="true" id="27">
+			<field_extra position="27"/>
+		</field>
+		<field name="Created_By" uuid="B7E4ABD82D3C46278C7AEF05A54F9B7A" type="10" limiting_length="20" never_null="true" id="28">
+			<field_extra position="28"/>
+		</field>
+		<field name="Modified_By" uuid="9F76532841CC4522934AAA17E2116A25" type="10" limiting_length="20" never_null="true" id="29">
+			<field_extra position="29"/>
+		</field>
+		<field name="Modified_Date_Time_TS" uuid="1CB5C4E4AE014E20ADEB4815BD45D1DE" type="4" never_null="true" id="30">
+			<field_extra position="30"/>
+		</field>
+		<field name="Treatment_Note_Printed" uuid="1A3B3E61170D48278BC2161EC08D8361" type="1" never_null="true" id="31">
+			<field_extra position="31"/>
+		</field>
+		<field name="ICD_9_Code_2nd" uuid="544B4071817741E784FC36E504642959" type="10" limiting_length="6" never_null="true" id="32">
+			<field_extra position="32"/>
+		</field>
+		<field name="GroupSize" uuid="71D7D6E6D6274DF28CDAD63904DF2C34" type="4" never_null="true" id="33">
+			<field_extra position="33"/>
+		</field>
+		<field name="Response" uuid="2E70FF40ACC24650BC876AA46644817F" type="10" limiting_length="30" never_null="true" id="34">
+			<field_extra position="34"/>
+		</field>
+		<field name="Plan" uuid="7FBC7260C3E9475E87C189895536692D" type="10" limiting_length="30" never_null="true" id="35">
+			<field_extra position="35"/>
+		</field>
+		<field name="AREQ_Modified_By" uuid="931D340E8F684BC58A1CC175A7AF8979" type="10" limiting_length="20" never_null="true" id="36">
+			<field_extra position="36"/>
+		</field>
+		<field name="AREQ_Modified_Date_Time_TS" uuid="AC150BF4EB1E4960BAEB813541086E45" type="4" never_null="true" id="37">
+			<field_extra position="37"/>
+		</field>
+		<field name="AREQ_Modified_By_UserID" uuid="7A01AEBA50D64E73BCF5F04078027C71" type="4" never_null="true" id="38">
+			<field_extra position="38"/>
+		</field>
+		<field name="Printed_Log" uuid="5BD2ED71B8554AF8BBEC8C6A988837B6" type="1" never_null="true" id="39">
+			<field_extra position="39"/>
+		</field>
+		<field name="AREQ_Modified_Date" uuid="2FD79095BF1B406A900492AE66DC0A3D" type="8" never_null="true" id="40">
+			<field_extra position="40"/>
+		</field>
+		<field name="Start_Time" uuid="E8E892122826417EADDC30F1B1976424" type="9" never_null="true" id="41">
+			<field_extra position="41"/>
+		</field>
+		<field name="Claim_Record_ID" uuid="7BDAB7B869DF4C9FA45571F444A0A597" type="4" never_null="true" id="42">
+			<field_extra position="42"/>
+		</field>
+		<field name="LBOD_Code" uuid="463DF41CA4BB4A93AD0016A06D455255" type="10" limiting_length="5" never_null="true" id="43">
+			<field_extra position="43"/>
+		</field>
+		<field name="LBOD_Comment" uuid="3CE9433FEE7D4046A61E580EC3DD34B0" type="10" never_null="true" id="44">
+			<field_extra position="44"/>
+		</field>
+		<field name="ERR_Status" uuid="4B4DDEB908AD40C38585CC25E43C4841" type="10" limiting_length="10" never_null="true" id="45">
+			<field_extra position="45"/>
+		</field>
+		<field name="ERR_Msg" uuid="B064934FA8124826AF449BB48A237DB5" type="14" never_null="true" id="46">
+			<field_extra position="46"/>
+		</field>
+		<field name="Modified_By_UserID" uuid="B910A7AAB64A4E42AC67148E4FE5B0D7" type="4" never_null="true" id="47">
+			<field_extra position="47"/>
+		</field>
+		<field name="ExtraNotBilledTreatment" uuid="A70DA07199D4497FBA0C32C537B64FFE" type="1" never_null="true" id="48">
+			<field_extra position="48"/>
+		</field>
+		<field name="Reason_Absent" uuid="682AEB6EAB8C47218C97160AD7D54420" type="10" limiting_length="30" never_null="true" id="49">
+			<field_extra position="49"/>
+		</field>
+		<field name="School_Year" uuid="F832956AA95149DBB7E675FBB84A2C39" type="10" limiting_length="9" never_null="true" id="50">
+			<field_extra position="50"/>
+		</field>
+		<field name="Supervised_Approved" uuid="50401263EAB64C628038218148691003" type="3" never_null="true" id="51">
+			<field_extra position="51"/>
+		</field>
+		<field name="Modifier_Codes" uuid="074BAF85962947EFA0334755F18A9EE6" type="10" limiting_length="5" never_null="true" id="52">
+			<field_extra position="52"/>
+		</field>
+		<field name="Duplicates_Key" uuid="1A8B1D06285A4FDF8E985A1B9963AEFB" type="10" limiting_length="50" never_null="true" id="53">
+			<field_extra position="53"/>
+		</field>
+		<field name="Combined_Record" uuid="04C83F6BC5904A24AA6341B2B2E044E7" type="1" never_null="true" id="54">
+			<field_extra position="54" multi_line="false">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="End_Time" uuid="4927E17D2D4D4FBE81F076F11455E167" type="9" never_null="true" id="55">
+			<field_extra position="55"/>
+		</field>
+		<field name="Service_NOT_Billable" uuid="14EC5EF392DB4F4DABB60D5E608A897F" type="1" never_null="true" id="56">
+			<field_extra position="56"/>
+		</field>
+		<field name="Paid_Units" uuid="8AE112F08AA84CF2BEBA27D2AD9CE609" type="4" never_null="true" id="57">
+			<field_extra position="57"/>
+		</field>
+		<field name="_History" uuid="0D7B39D31DAD40B2908AE6D7C388082E" type="14" never_null="true" id="58">
+			<field_extra position="58"/>
+		</field>
+		<field name="LBOD_Date" uuid="FE16B0AC37D24641A33C1B6DD73E2CA1" type="8" never_null="true" id="59">
+			<field_extra position="59"/>
+		</field>
+		<field name="Printed_Log_Date" uuid="C1D01EDF667149A59F8DAFAA9DC6B961" type="8" never_null="true" id="60">
+			<field_extra position="62"/>
+		</field>
+		<field name="Duplicates_Key_no2" uuid="38A6E1E12FAE4258B1478AA72CB584B0" type="10" limiting_length="255" never_null="true" id="61">
+			<field_extra position="63"/>
+		</field>
+		<field name="notRFS_Reasons" uuid="A4CCA02681F44045945BFC7F547D605E" type="14" never_null="true" id="62">
+			<field_extra position="64"/>
+		</field>
+		<field name="Status_LastUpdate" uuid="2C6CE32386E4423CB117B61474E456CD" type="8" never_null="true" id="63">
+			<field_extra position="65"/>
+		</field>
+		<field name="Status_SubStatus" uuid="FBD5F35C264340C9A8F731ED50AF26F3" type="10" limiting_length="40" never_null="true" id="64">
+			<field_extra position="66"/>
+		</field>
+		<field name="Status_NumMsgs" uuid="E4931B141560413C9F6FA86DCAC3E68A" type="3" never_null="true" id="65">
+			<field_extra position="67"/>
+		</field>
+		<field name="InterventionPlan" uuid="6332AD4EF41344118812496A66184871" type="10" never_null="true" id="66">
+			<field_extra position="68"/>
+		</field>
+		<field name="Has_Valid_PO" uuid="C64E79DCD59F49099D0B4C622D195819" type="1" never_null="true" id="67">
+			<field_extra position="69"/>
+		</field>
+		<field name="ClaimNo_835_History" uuid="CFCF8F318C9D4B5FA770F19187FAE567" type="14" never_null="true" id="68">
+			<field_extra position="70"/>
+		</field>
+		<field name="Amount_Allowed" uuid="48067776098E4F269356941513E7F295" type="6" never_null="true" id="69">
+			<field_extra position="71"/>
+		</field>
+		<field name="StateAdjustRsnCode" uuid="A28DF833F0DC4133A759F7B0713E1DA2" type="14" never_null="true" id="70">
+			<field_extra position="72"/>
+		</field>
+		<field name="CheckWriteCutOffDt" uuid="60BB48D866524C5593760C353F2A83E1" type="8" never_null="true" id="71">
+			<field_extra position="73"/>
+		</field>
+		<field name="ToBeReviewed" uuid="995A1D80B7604D65AEAC34AC7BF0FBA0" type="1" never_null="true" id="72">
+			<field_extra visible="false" position="74"/>
+		</field>
+		<field name="Already_Updated" uuid="95940B1D0B6047F48F727228DE96E6C2" type="1" never_null="true" id="73">
+			<field_extra position="75"/>
+		</field>
+		<field name="SchoolCalendarNotes" uuid="E45FE170E3B44736961F1859E94DF56C" type="14" never_null="true" id="74">
+			<field_extra position="76"/>
+		</field>
+		<field name="HasNote" uuid="15F2AC3B7A6E4C179F7E867D185AD250" type="1" never_null="true" id="75">
+			<field_extra position="77"/>
+		</field>
+		<field name="GUID" uuid="19024B4D4B28414FAD1E6B53FC67F334" type="10" unique="true" autogenerate="true" store_as_UUID="true" never_null="true" id="76">
+			<field_extra multi_line="false" position="78">
+				<editor_field_info>
+					<color red="255" green="255" blue="255" alpha="0"/>
+				</editor_field_info>
+			</field_extra>
+		</field>
+		<field name="MSG_toBeActionedByUser" uuid="A7B4F936C0C946B3A8361A900437E2BC" type="4" never_null="true" id="77">
+			<field_extra position="79"/>
+		</field>
+		<field name="ICD_10_Code" uuid="8F0812451B9240EAA070C3E72485D795" type="10" limiting_length="8" never_null="true" id="78">
+			<field_extra position="80"/>
+		</field>
+		<field name="ICD_10_Code_2nd" uuid="DF1E27C7EC0D4AD695028E24690B45FD" type="10" limiting_length="8" never_null="true" id="79">
+			<field_extra position="81"/>
+		</field>
+		<field name="Supervised_Approved_UserID" uuid="C87ECFE79D9440A6BBB83776C2FB4444" type="4" never_null="true" id="80">
+			<field_extra position="82"/>
+		</field>
+		<field name="What_ICD_Code_To_Use" uuid="07C81C52E43E4E519A301E1016915F55" type="10" limiting_length="8" never_null="true" id="81">
+			<field_extra position="83"/>
+		</field>
+		<field name="Plan_for_Next_Session" uuid="77BB3A471B08419FB869DAEA3337FA54" type="10" never_null="true" id="82">
+			<field_extra position="60"/>
+		</field>
+		<primary_key field_name="GUID" field_uuid="19024B4D4B28414FAD1E6B53FC67F334"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info fields_ordering="2" displayable_fields_count="85">
+				<color red="0" green="0" blue="0" alpha="0"/>
+				<coordinates left="949.5859375" top="9.8359375" width="235" height="1837.9140625"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<index kind="regular" uuid="0995765DA27048759E14059E560A0730" type="7">
+		<field_ref uuid="31D898B4950C44B89FCDB7BD227E4C91" name="Claim_835_No">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="1031FF76DCED4240943F42C79637A7A1" type="7">
+		<field_ref uuid="53809DD5F4274E6CBCF6757A9CE0DB9F" name="Treatment_Note_Printed">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="1691475329234AD185460909B67E161A" type="7">
+		<field_ref uuid="B5F47244385B40CEA72537E9B2AE61B4" name="Amount_Expected">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="37B3BE0E01314A17B277218A09CC6CDD" type="7">
+		<field_ref uuid="CCF72A0B36764253A7D344C3274C6B7D" name="Student_Calendars_ID">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="41E7B90CF76E4EEC876949344C97C398" type="7">
+		<field_ref uuid="F7AFA5BE6BFA45C0B41640F0FA92EE21" name="HIPAA_Claim_Status">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="45BF27C0276E45739E315AE7F1BC8E82" type="7">
+		<field_ref uuid="A1F98D8D90DB4BAC96F40CB42DA5C347" name="Status">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="46DFB767344D4E40BEDCECD2A87F3C00" type="7">
+		<field_ref uuid="9145D94E4B4549BD932C9CB032376C6B" name="Billed_Amount">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="4FA1A6E823984DD6B61DED11387AC4C6" type="7">
+		<field_ref uuid="4D685A917D09473A8295F7E14D4B9B0D" name="Batch_No">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="6838BDDF27EA492285E2BE9EFBE9AAF2" type="7">
+		<field_ref uuid="5DCA64C7A9D0479E8E07D72D22D90BAF" name="Service_Provided_Status">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="785933B741B441EEB80289E5985778E8" type="7">
+		<field_ref uuid="73D10FF432E94A789C74A7865D2F075C" name="District_ID">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="79DBB194CCF14F66B4E5A16B51EEB887" type="7">
+		<field_ref uuid="F317101EFC1F4CEBA27C0A98A6B426FA" name="Units">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="7BC99FF15FB34A07B55A0EDDCEE22F2F" type="7">
+		<field_ref uuid="D8978109166A4B329D447F3E93917B8E" name="GroupSize">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="7DC765F5AD6C4238993A11DA473FC071" type="7">
+		<field_ref uuid="E8C168B3C9EF4C2DBE2B7B3B0F24B2A3" name="guid">
+			<table_ref uuid="D58CAC88AE6E459C92156FCCD87E8452" name="bTable_1"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="88A2BE93FE9A4D188DD146895033AF17" type="1">
+		<field_ref uuid="19024B4D4B28414FAD1E6B53FC67F334" name="GUID">
+			<table_ref uuid="D350F5460C0A465E9DA424DF88C8D370" name="Treatments_ARCHIVE"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="A1BB2251FC9C418A9580388BCE566AC0" type="7">
+		<field_ref uuid="F5FF96AB7EA34F96B9C8FCADA60145D6" name="guid">
+			<table_ref uuid="5B0EF6B2592E45F7A7DB47CEA0F11FA7" name="aTable_2"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B129D3BDDB1A421F9A34814AAC8BD75F" type="7">
+		<field_ref uuid="6A6E0E332F1544C08591EACA9E1A7A80" name="License_Area">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="B67AA6B6F5CD4E589CAD021DFB9BB38C" type="1">
+		<field_ref uuid="4AE86F9A9E084CC49A8BF337F4742F6E" name="GUID">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B8D30085F23C4714BA9D80CD378AC853" type="7">
+		<field_ref uuid="D0295FD92BEE451D90BD71CF541B55F6" name="Service_Code">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="B99C506E21C1443991919E17C1AC9F70" type="7">
+		<field_ref uuid="030C095B374F43FEB5BAA1F616D1F056" name="Treatments_ID">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="BCBD687C32B14F2381F6EC120C987877" type="7">
+		<field_ref uuid="CC53100BEBC24DB49C01BDB16E820CA0" name="Paid_Amount">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C107BEE50FA34C6D88F455B1B02C8096" type="7">
+		<field_ref uuid="6F334085B24C49D5BF193BB8901C9B35" name="Service_Provided_By">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C29E3C780F5F4C1FB204F2C181B4B6FE" type="7">
+		<field_ref uuid="3CE17C283E554789A45C9CEE1AFB403E" name="Claim_Record_ID">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C2F94F23A9284AF0B9C0B2F2101C94D1" type="7">
+		<field_ref uuid="96198A8B062B4D22BE22081544B9C22D" name="Submission_Date">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="C9A70F9BB28F43138334D52FDA0DFC64" type="7">
+		<field_ref uuid="35632278A1744F7081F4E279D4D57D6B" name="RA_Date">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="D2F7DFC9FC7943DE858B3AC5A94FD34C" type="7">
+		<field_ref uuid="F2C60E91FC674C0E804CBBE0A8022CDA" name="Duration">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="E08F0A624CCA4CF0BF1234D24D577021" type="7">
+		<field_ref uuid="68CE392590C3420EB1D4FBBB2AE462AE" name="Student_Key">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="FFAC75716FB847229A97AF138A3FBB75" type="7">
+		<field_ref uuid="6A11DA0A0B124070AE196AAE6360E079" name="GUID">
+			<table_ref uuid="EA56BE9FE1104067858D4A9BCFD7EA2F" name="cTable_3"/>
+		</field_ref>
+	</index>
+	<index kind="regular" uuid="FFE8C1CB1DAB47BAB5FA0D59BA4A9CB5" type="7">
+		<field_ref uuid="A9E02398ED774923BA5C1F7FB0F3B528" name="Service_Date">
+			<table_ref uuid="130F00DB68CE4BDAB38085A9A246859C" name="Treatments"/>
+		</field_ref>
+	</index>
+	<base_extra data_file_path=":Data:UserMode_Component.4DD" package_name="UserMode_Component" structure_file_name="UserMode_Component" ppc_code_stamp="86" __stringCompHash="icu:68.1.0" __keywordBuildingHash="icu:68.1.0">
+		<temp_folder folder_selector="data"/>
+	</base_extra>
+</base>

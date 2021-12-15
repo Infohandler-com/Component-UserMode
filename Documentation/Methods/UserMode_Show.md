@@ -1,0 +1,1 @@
+   UserMode_Show ({tableNo})       Displays the user mode. Optional param says which       table to show by default.       

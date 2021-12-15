@@ -1,0 +1,1 @@
+   Component_SetMenuBar          DESCRIPTION       Creates and sets the menu bar.         ----------------------------------------------------     CALLED BY       "UserMode_Listbox" project form     ----------------------------------------------------     HISTORY       Created by: DB (2013-10-06) - Added menu     ----------------------------------------------------  

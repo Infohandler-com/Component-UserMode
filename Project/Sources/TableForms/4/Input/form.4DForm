@@ -1,0 +1,2923 @@
+{
+	"destination": "detailScreen",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 776,
+	"markerBreak": 776,
+	"markerFooter": 786,
+	"events": [
+		"onLoad",
+		"onValidate",
+		"onClick",
+		"onHeader",
+		"onPrintingBreak",
+		"onPrintingFooter",
+		"onDisplayDetail",
+		"onOutsideCall",
+		"onDoubleClick",
+		"onDrop",
+		"onMenuSelect",
+		"onPluginArea",
+		"onDataChange",
+		"onDragOver",
+		"onPrintingDetail",
+		"onOpenDetail",
+		"onCloseDetail",
+		"onTimer",
+		"onAfterKeystroke",
+		"onLoadRecord",
+		"onAfterEdit",
+		"onBeginDragOver",
+		"onBoundVariableChange",
+		"onPageChange"
+	],
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "792pt",
+		"paperHeight": "612pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Text177": {
+					"type": "text",
+					"top": 10,
+					"left": 103,
+					"width": 502,
+					"height": 17,
+					"sizingX": "grow",
+					"stroke": "#000000",
+					"text": "Treatments"
+				},
+				"vRecNum": {
+					"type": "input",
+					"top": 13,
+					"left": 621,
+					"width": 100,
+					"height": 12,
+					"stroke": "#000000",
+					"fontFamily": "System Font",
+					"fontSize": 9,
+					"focusable": false,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Record Number"
+					},
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"method": "ObjectMethods/vRecNum.4dm",
+					"events": [
+						"onLoad",
+						"onHeader",
+						"onPrintingBreak"
+					]
+				},
+				"Line178": {
+					"type": "line",
+					"top": 0,
+					"left": 88,
+					"height": 776,
+					"sizingY": "grow"
+				},
+				"bFirst": {
+					"type": "pictureButton",
+					"top": 10,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/First Record"
+					},
+					"action": "firstRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/FirstRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPrevious": {
+					"type": "pictureButton",
+					"top": 65,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Record"
+					},
+					"action": "previousRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNext": {
+					"type": "pictureButton",
+					"top": 120,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Record"
+					},
+					"action": "nextRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bLast": {
+					"type": "pictureButton",
+					"top": 175,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Last Record"
+					},
+					"action": "lastRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/LastRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bPreviousPage": {
+					"type": "pictureButton",
+					"top": 230,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Previous Page"
+					},
+					"action": "previousPage",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/PreviousPage.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bNextPage": {
+					"type": "pictureButton",
+					"top": 285,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Next Page"
+					},
+					"action": "nextPage",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/NextPage.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bDelete": {
+					"type": "pictureButton",
+					"top": 340,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Delete Record"
+					},
+					"action": "deleteRecord",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/DeleteRecord.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bCancel": {
+					"type": "pictureButton",
+					"top": 395,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/Cancel"
+					},
+					"action": "cancel",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Cancel.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				},
+				"bValidate": {
+					"type": "pictureButton",
+					"top": 450,
+					"left": 20,
+					"width": 48,
+					"height": 48,
+					"tooltip": {
+						"$ref": "/SOURCES/tips.json#/OK"
+					},
+					"action": "accept",
+					"rowCount": 4,
+					"picture": "/RESOURCES/Images/Buttons/LightGrey/Validate.png",
+					"switchWhenRollover": true,
+					"switchBackWhenReleased": true,
+					"useLastFrameAsDisabled": true,
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text179": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Treatments_ID : "
+				},
+				"Text180": {
+					"type": "text",
+					"top": 71,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "District_ID : "
+				},
+				"Text181": {
+					"type": "text",
+					"top": 97,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Student_Calendars_ID : "
+				},
+				"Text182": {
+					"type": "text",
+					"top": 123,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Student_Key : "
+				},
+				"Text183": {
+					"type": "text",
+					"top": 149,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Status : "
+				},
+				"Text184": {
+					"type": "text",
+					"top": 175,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Service_Provided_Status : "
+				},
+				"Text185": {
+					"type": "text",
+					"top": 201,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Service_Provided_By : "
+				},
+				"Text186": {
+					"type": "text",
+					"top": 227,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "License_Area : "
+				},
+				"Text187": {
+					"type": "text",
+					"top": 253,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "HIPAA_Claim_Status : "
+				},
+				"Text188": {
+					"type": "text",
+					"top": 327,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Service_Date : "
+				},
+				"Text189": {
+					"type": "text",
+					"top": 353,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ICD_9_Code : "
+				},
+				"Text190": {
+					"type": "text",
+					"top": 379,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Service_Code : "
+				},
+				"Text191": {
+					"type": "text",
+					"top": 405,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Duration : "
+				},
+				"Text192": {
+					"type": "text",
+					"top": 431,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Units : "
+				},
+				"Text193": {
+					"type": "text",
+					"top": 457,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Billed_Amount : "
+				},
+				"Text194": {
+					"type": "text",
+					"top": 483,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Paid_Amount : "
+				},
+				"Text195": {
+					"type": "text",
+					"top": 509,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Amount_Expected : "
+				},
+				"Text196": {
+					"type": "text",
+					"top": 535,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Adjustment_Amount : "
+				},
+				"Text197": {
+					"type": "text",
+					"top": 561,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Batch_No : "
+				},
+				"Text198": {
+					"type": "text",
+					"top": 587,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Submission_Date : "
+				},
+				"Text199": {
+					"type": "text",
+					"top": 613,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Claim_835_No : "
+				},
+				"Text200": {
+					"type": "text",
+					"top": 639,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "RA_Date : "
+				},
+				"Text201": {
+					"type": "text",
+					"top": 665,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Return_ID : "
+				},
+				"Text202": {
+					"type": "text",
+					"top": 691,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Printed : "
+				},
+				"Treatments_ID": {
+					"type": "input",
+					"top": 45,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Treatments_ID:1",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"District_ID": {
+					"type": "input",
+					"top": 71,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]District_ID:2",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Student_Calendars_ID": {
+					"type": "input",
+					"top": 97,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Student_Calendars_ID:3",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Student_Key": {
+					"type": "input",
+					"top": 123,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Student_Key:4",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Status": {
+					"type": "input",
+					"top": 149,
+					"left": 319,
+					"width": 32,
+					"height": 17,
+					"dataSource": "[Treatments:4]Status:5",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Service_Provided_Status": {
+					"type": "input",
+					"top": 175,
+					"left": 319,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Treatments:4]Service_Provided_Status:6",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Service_Provided_By": {
+					"type": "input",
+					"top": 201,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Service_Provided_By:7",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"License_Area": {
+					"type": "input",
+					"top": 227,
+					"left": 319,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[Treatments:4]License_Area:8",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"HIPAA_Claim_Status": {
+					"type": "input",
+					"top": 253,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]HIPAA_Claim_Status:9",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Service_Date": {
+					"type": "input",
+					"top": 327,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]Service_Date:10",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ICD_9_Code": {
+					"type": "input",
+					"top": 353,
+					"left": 319,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[Treatments:4]ICD_9_Code:11",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Service_Code": {
+					"type": "input",
+					"top": 379,
+					"left": 319,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[Treatments:4]Service_Code:12",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Duration": {
+					"type": "input",
+					"top": 405,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Duration:13",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Units": {
+					"type": "input",
+					"top": 431,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Units:14",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Billed_Amount": {
+					"type": "input",
+					"top": 457,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]Billed_Amount:15",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Paid_Amount": {
+					"type": "input",
+					"top": 483,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]Paid_Amount:16",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Amount_Expected": {
+					"type": "input",
+					"top": 509,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]Amount_Expected:17",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Adjustment_Amount": {
+					"type": "input",
+					"top": 535,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]Adjustment_Amount:18",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Batch_No": {
+					"type": "input",
+					"top": 561,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Batch_No:19",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Submission_Date": {
+					"type": "input",
+					"top": 587,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]Submission_Date:20",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Claim_835_No": {
+					"type": "input",
+					"top": 613,
+					"left": 319,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[Treatments:4]Claim_835_No:21",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"RA_Date": {
+					"type": "input",
+					"top": 639,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]RA_Date:22",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Return_ID": {
+					"type": "input",
+					"top": 665,
+					"left": 319,
+					"width": 400,
+					"height": 17,
+					"dataSource": "[Treatments:4]Return_ID:23",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Printed": {
+					"type": "input",
+					"top": 691,
+					"left": 319,
+					"width": 24,
+					"height": 17,
+					"dataSource": "[Treatments:4]Printed:24",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text205": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Treatment_Note : "
+				},
+				"Text206": {
+					"type": "text",
+					"top": 119,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Goals_Address : "
+				},
+				"Text207": {
+					"type": "text",
+					"top": 193,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Created_Date_Time_TS : "
+				},
+				"Text208": {
+					"type": "text",
+					"top": 219,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Created_By : "
+				},
+				"Text209": {
+					"type": "text",
+					"top": 245,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Modified_By : "
+				},
+				"Text210": {
+					"type": "text",
+					"top": 271,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Modified_Date_Time_TS : "
+				},
+				"Text211": {
+					"type": "text",
+					"top": 297,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Treatment_Note_Printed : "
+				},
+				"Text212": {
+					"type": "text",
+					"top": 323,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ICD_9_Code_2nd : "
+				},
+				"Text213": {
+					"type": "text",
+					"top": 349,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "GroupSize : "
+				},
+				"Text214": {
+					"type": "text",
+					"top": 375,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Response : "
+				},
+				"Text215": {
+					"type": "text",
+					"top": 401,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Plan : "
+				},
+				"Text216": {
+					"type": "text",
+					"top": 427,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "AREQ_Modified_By : "
+				},
+				"Text217": {
+					"type": "text",
+					"top": 453,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "AREQ_Modified_Date_Time_TS : "
+				},
+				"Text218": {
+					"type": "text",
+					"top": 479,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "AREQ_Modified_By_UserID : "
+				},
+				"Text219": {
+					"type": "text",
+					"top": 505,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Printed_Log : "
+				},
+				"Text220": {
+					"type": "text",
+					"top": 531,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "AREQ_Modified_Date : "
+				},
+				"Text221": {
+					"type": "text",
+					"top": 557,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Start_Time : "
+				},
+				"Text222": {
+					"type": "text",
+					"top": 583,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Claim_Record_ID : "
+				},
+				"Text223": {
+					"type": "text",
+					"top": 609,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "LBOD_Code : "
+				},
+				"Text224": {
+					"type": "text",
+					"top": 635,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "LBOD_Comment : "
+				},
+				"Text225": {
+					"type": "text",
+					"top": 709,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ERR_Status : "
+				},
+				"Treatment_Note": {
+					"type": "input",
+					"top": 45,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]Treatment_Note:25",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Goals_Address": {
+					"type": "input",
+					"top": 119,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]Goals_Address:26",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Created_Date_Time_TS": {
+					"type": "input",
+					"top": 193,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Created_Date_Time_TS:27",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Created_By": {
+					"type": "input",
+					"top": 219,
+					"left": 319,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[Treatments:4]Created_By:28",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Modified_By": {
+					"type": "input",
+					"top": 245,
+					"left": 319,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[Treatments:4]Modified_By:29",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Modified_Date_Time_TS": {
+					"type": "input",
+					"top": 271,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Modified_Date_Time_TS:30",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Treatment_Note_Printed": {
+					"type": "checkbox",
+					"top": 297,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Treatment_Note_Printed:31",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ICD_9_Code_2nd": {
+					"type": "input",
+					"top": 323,
+					"left": 319,
+					"width": 48,
+					"height": 17,
+					"dataSource": "[Treatments:4]ICD_9_Code_2nd:32",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GroupSize": {
+					"type": "input",
+					"top": 349,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]GroupSize:33",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Response": {
+					"type": "input",
+					"top": 375,
+					"left": 319,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[Treatments:4]Response:34",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Plan": {
+					"type": "input",
+					"top": 401,
+					"left": 319,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[Treatments:4]Plan:35",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AREQ_Modified_By": {
+					"type": "input",
+					"top": 427,
+					"left": 319,
+					"width": 160,
+					"height": 17,
+					"dataSource": "[Treatments:4]AREQ_Modified_By:36",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AREQ_Modified_Date_Time_TS": {
+					"type": "input",
+					"top": 453,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]AREQ_Modified_Date_Time_TS:37",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AREQ_Modified_By_UserID": {
+					"type": "input",
+					"top": 479,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]AREQ_Modified_By_UserID:38",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Printed_Log": {
+					"type": "checkbox",
+					"top": 505,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Printed_Log:39",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"AREQ_Modified_Date": {
+					"type": "input",
+					"top": 531,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]AREQ_Modified_Date:40",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Start_Time": {
+					"type": "input",
+					"top": 557,
+					"left": 319,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[Treatments:4]Start_Time:41",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Claim_Record_ID": {
+					"type": "input",
+					"top": 583,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Claim_Record_ID:42",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LBOD_Code": {
+					"type": "input",
+					"top": 609,
+					"left": 319,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Treatments:4]LBOD_Code:43",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LBOD_Comment": {
+					"type": "input",
+					"top": 635,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]LBOD_Comment:44",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ERR_Status": {
+					"type": "input",
+					"top": 709,
+					"left": 319,
+					"width": 80,
+					"height": 17,
+					"dataSource": "[Treatments:4]ERR_Status:45",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text228": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ERR_Msg : "
+				},
+				"Text229": {
+					"type": "text",
+					"top": 119,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Modified_By_UserID : "
+				},
+				"Text230": {
+					"type": "text",
+					"top": 145,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ExtraNotBilledTreatment : "
+				},
+				"Text231": {
+					"type": "text",
+					"top": 171,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Reason_Absent : "
+				},
+				"Text232": {
+					"type": "text",
+					"top": 197,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "School_Year : "
+				},
+				"Text233": {
+					"type": "text",
+					"top": 223,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Supervised_Approved : "
+				},
+				"Text234": {
+					"type": "text",
+					"top": 249,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Modifier_Codes : "
+				},
+				"Text235": {
+					"type": "text",
+					"top": 275,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Duplicates_Key : "
+				},
+				"Text236": {
+					"type": "text",
+					"top": 301,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Combined_Record : "
+				},
+				"Text237": {
+					"type": "text",
+					"top": 327,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "End_Time : "
+				},
+				"Text238": {
+					"type": "text",
+					"top": 353,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Service_NOT_Billable : "
+				},
+				"Text239": {
+					"type": "text",
+					"top": 379,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Paid_Units : "
+				},
+				"Text240": {
+					"type": "text",
+					"top": 405,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "_History : "
+				},
+				"Text241": {
+					"type": "text",
+					"top": 479,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "LBOD_Date : "
+				},
+				"Text242": {
+					"type": "text",
+					"top": 505,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Plan_for_Next_Session : "
+				},
+				"Text243": {
+					"type": "text",
+					"top": 579,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Printed_Log_Date : "
+				},
+				"Text244": {
+					"type": "text",
+					"top": 605,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Duplicates_Key_no2 : "
+				},
+				"Text245": {
+					"type": "text",
+					"top": 631,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "notRFS_Reasons : "
+				},
+				"Text246": {
+					"type": "text",
+					"top": 705,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Status_LastUpdate : "
+				},
+				"Text247": {
+					"type": "text",
+					"top": 731,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Status_SubStatus : "
+				},
+				"ERR_Msg": {
+					"type": "input",
+					"top": 45,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]ERR_Msg:46",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Modified_By_UserID": {
+					"type": "input",
+					"top": 119,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Modified_By_UserID:47",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ExtraNotBilledTreatment": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]ExtraNotBilledTreatment:48",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Reason_Absent": {
+					"type": "input",
+					"top": 171,
+					"left": 319,
+					"width": 240,
+					"height": 17,
+					"dataSource": "[Treatments:4]Reason_Absent:49",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"School_Year": {
+					"type": "input",
+					"top": 197,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]School_Year:50",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Supervised_Approved": {
+					"type": "input",
+					"top": 223,
+					"left": 319,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[Treatments:4]Supervised_Approved:51",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Modifier_Codes": {
+					"type": "input",
+					"top": 249,
+					"left": 319,
+					"width": 40,
+					"height": 17,
+					"dataSource": "[Treatments:4]Modifier_Codes:52",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Duplicates_Key": {
+					"type": "input",
+					"top": 275,
+					"left": 319,
+					"width": 400,
+					"height": 17,
+					"dataSource": "[Treatments:4]Duplicates_Key:53",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Combined_Record": {
+					"type": "checkbox",
+					"top": 301,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Combined_Record:54",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"End_Time": {
+					"type": "input",
+					"top": 327,
+					"left": 319,
+					"width": 63,
+					"height": 17,
+					"dataSource": "[Treatments:4]End_Time:55",
+					"dataSourceTypeHint": "time",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Service_NOT_Billable": {
+					"type": "checkbox",
+					"top": 353,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Service_NOT_Billable:56",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Paid_Units": {
+					"type": "input",
+					"top": 379,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Paid_Units:57",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"_History": {
+					"type": "input",
+					"top": 405,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]_History:58",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"LBOD_Date": {
+					"type": "input",
+					"top": 479,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]LBOD_Date:59",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Plan_for_Next_Session": {
+					"type": "input",
+					"top": 505,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]Plan_for_Next_Session:60",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Printed_Log_Date": {
+					"type": "input",
+					"top": 579,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]Printed_Log_Date:61",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Duplicates_Key_no2": {
+					"type": "input",
+					"top": 605,
+					"left": 319,
+					"width": 400,
+					"height": 17,
+					"dataSource": "[Treatments:4]Duplicates_Key_no2:62",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"notRFS_Reasons": {
+					"type": "input",
+					"top": 631,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]notRFS_Reasons:63",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Status_LastUpdate": {
+					"type": "input",
+					"top": 705,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]Status_LastUpdate:64",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Status_SubStatus": {
+					"type": "input",
+					"top": 731,
+					"left": 319,
+					"width": 320,
+					"height": 17,
+					"dataSource": "[Treatments:4]Status_SubStatus:65",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"Text249": {
+					"type": "text",
+					"top": 45,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Status_NumMsgs : "
+				},
+				"Text250": {
+					"type": "text",
+					"top": 71,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "InterventionPlan : "
+				},
+				"Text251": {
+					"type": "text",
+					"top": 145,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Has_Valid_PO : "
+				},
+				"Text252": {
+					"type": "text",
+					"top": 171,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ClaimNo_835_History : "
+				},
+				"Text253": {
+					"type": "text",
+					"top": 245,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Amount_Allowed : "
+				},
+				"Text254": {
+					"type": "text",
+					"top": 271,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "StateAdjustRsnCode : "
+				},
+				"Text255": {
+					"type": "text",
+					"top": 345,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "CheckWriteCutOffDt : "
+				},
+				"Text256": {
+					"type": "text",
+					"top": 371,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Already_Updated : "
+				},
+				"Text257": {
+					"type": "text",
+					"top": 397,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "SchoolCalendarNotes : "
+				},
+				"Text258": {
+					"type": "text",
+					"top": 471,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "HasNote : "
+				},
+				"Text259": {
+					"type": "text",
+					"top": 497,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "GUID : "
+				},
+				"Text260": {
+					"type": "text",
+					"top": 523,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "MSG_toBeActionedByUser : "
+				},
+				"Text261": {
+					"type": "text",
+					"top": 549,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ICD_10_Code : "
+				},
+				"Text262": {
+					"type": "text",
+					"top": 575,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "ICD_10_Code_2nd : "
+				},
+				"Text263": {
+					"type": "text",
+					"top": 601,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "Supervised_Approved_UserID : "
+				},
+				"Text264": {
+					"type": "text",
+					"top": 627,
+					"left": 115,
+					"width": 199,
+					"height": 17,
+					"text": "What_ICD_Code_To_Use : "
+				},
+				"Status_NumMsgs": {
+					"type": "input",
+					"top": 45,
+					"left": 319,
+					"width": 56,
+					"height": 17,
+					"dataSource": "[Treatments:4]Status_NumMsgs:66",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"InterventionPlan": {
+					"type": "input",
+					"top": 71,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]InterventionPlan:67",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Has_Valid_PO": {
+					"type": "checkbox",
+					"top": 145,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Has_Valid_PO:68",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ClaimNo_835_History": {
+					"type": "input",
+					"top": 171,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]ClaimNo_835_History:69",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Amount_Allowed": {
+					"type": "input",
+					"top": 245,
+					"left": 319,
+					"width": 72,
+					"height": 17,
+					"dataSource": "[Treatments:4]Amount_Allowed:70",
+					"dataSourceTypeHint": "number",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"StateAdjustRsnCode": {
+					"type": "input",
+					"top": 271,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]StateAdjustRsnCode:71",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"CheckWriteCutOffDt": {
+					"type": "input",
+					"top": 345,
+					"left": 319,
+					"width": 81,
+					"height": 17,
+					"dataSource": "[Treatments:4]CheckWriteCutOffDt:72",
+					"dataSourceTypeHint": "date",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Already_Updated": {
+					"type": "checkbox",
+					"top": 371,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]Already_Updated:74",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"SchoolCalendarNotes": {
+					"type": "input",
+					"top": 397,
+					"left": 319,
+					"width": 234,
+					"height": 65,
+					"dataSource": "[Treatments:4]SchoolCalendarNotes:75",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"scrollbarVertical": "visible",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"HasNote": {
+					"type": "checkbox",
+					"top": 471,
+					"left": 319,
+					"width": 61,
+					"height": 15,
+					"dataSource": "[Treatments:4]HasNote:76",
+					"text": "Yes",
+					"stroke": "#000000",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"GUID": {
+					"type": "input",
+					"top": 497,
+					"left": 319,
+					"width": 250,
+					"height": 17,
+					"dataSource": "[Treatments:4]GUID:77",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "sunken",
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"MSG_toBeActionedByUser": {
+					"type": "input",
+					"top": 523,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]MSG_toBeActionedByUser:78",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ICD_10_Code": {
+					"type": "input",
+					"top": 549,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]ICD_10_Code:79",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"ICD_10_Code_2nd": {
+					"type": "input",
+					"top": 575,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]ICD_10_Code_2nd:80",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"Supervised_Approved_UserID": {
+					"type": "input",
+					"top": 601,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]Supervised_Approved_UserID:81",
+					"dataSourceTypeHint": "integer",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				},
+				"What_ICD_Code_To_Use": {
+					"type": "input",
+					"top": 627,
+					"left": 319,
+					"width": 64,
+					"height": 17,
+					"dataSource": "[Treatments:4]What_ICD_Code_To_Use:82",
+					"fill": "#FFFFFF",
+					"borderStyle": "sunken",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onLoad",
+						"onValidate",
+						"onClick",
+						"onHeader",
+						"onPrintingBreak",
+						"onPrintingFooter",
+						"onDisplayDetail",
+						"onDataChange",
+						"onPrintingDetail"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"View 2": {
+				"objects": [
+					"Text177",
+					"vRecNum",
+					"Line178"
+				]
+			},
+			"View 3": {
+				"objects": [
+					"bFirst",
+					"bPrevious",
+					"bNext",
+					"bLast",
+					"bPreviousPage",
+					"bNextPage",
+					"bDelete",
+					"bCancel",
+					"bValidate"
+				]
+			},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	}
+}

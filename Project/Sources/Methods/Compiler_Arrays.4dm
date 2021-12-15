@@ -1,0 +1,90 @@
+//%attributes = {"invisible":true}
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_DELETE\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_EXECUTE\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_EXPORT\
+; \
+0\
+)\
+
+ARRAY TEXT:C222\
+(\
+AR_USERMODE_FORMS\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_IMPORT\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_MODIFY\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_NEW\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_REPORT\
+; \
+0\
+)\
+
+ARRAY BOOLEAN:C223\
+(\
+AR_USERMODE_SHOW\
+; \
+0\
+)\
+
+ARRAY TEXT:C222\
+(\
+AR_USERMODE_TABLENAMES\
+; \
+0\
+)\
+
+ARRAY POINTER:C280\
+(\
+AR_USERMODE_TABLEPTRS\
+; \
+0\
+)\
+
+ARRAY TEXT:C222(ar_UserMode_TableViews; 0)
+ARRAY TEXT:C222(ar_UTIL_method; 0)
+ARRAY TEXT:C222(ar_UTIL_title; 0)
+ARRAY LONGINT:C221(al_UserMode_FieldNo; 0)
+ARRAY TEXT:C222(at_fld; 0)
+ARRAY TEXT:C222(at_UserMode_FieldNames; 0)
+ARRAY LONGINT:C221(al_UserMode_FieldNo_COPY; 0)
+ARRAY LONGINT:C221(al_UserMode_FieldType; 0)
+ARRAY TEXT:C222(at_UserMode_FieldNames_COPY; 0)
+ARRAY OBJECT:C1221(assignmentObjects; 0)
+ARRAY TEXT:C222(assignmentStatements; 0)
+ARRAY TEXT:C222(assignmentTypes; 0)

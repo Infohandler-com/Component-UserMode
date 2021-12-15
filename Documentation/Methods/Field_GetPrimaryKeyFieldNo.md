@@ -1,0 +1,1 @@
+   Field_GetPrimaryKeyFieldNo (tableNo) : fieldNo     Field_GetPrimaryKeyFieldNo (longint) : longint          DESCRIPTION       Returns the field number of the primary key field for       the specified table.      

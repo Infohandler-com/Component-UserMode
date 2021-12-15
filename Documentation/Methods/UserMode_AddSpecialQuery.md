@@ -1,0 +1,1 @@
+   UserMode_AddSpecialQuery (tablePtr, queryName, callbackMethod)     UserMode_AddSpecialQuery (pointer, text, text)         DESCRIPTION             

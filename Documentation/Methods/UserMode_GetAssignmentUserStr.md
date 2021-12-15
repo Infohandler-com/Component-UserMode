@@ -1,0 +1,1 @@
+   UserMode_GetAssignmentUserStr (assignmentDetailsObj) : userFriendlyStr     UserMode_GetAssignmentUserStr (object) : text         DESCRIPTION       Returns a human readable string of all the assignment       statements that are in the object.      

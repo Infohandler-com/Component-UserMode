@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="14">
+	<com.4d>
+		<compiler>
+			<options compilation_path="3" fat_binary="true"/>
+			<typage default_for_numeric="1"/>
+		</compiler>
+		<interface>
+			<user print_progress="false"/>
+			<developper display_toolbar="true"/>
+		</interface>
+		<server>
+			<network>
+				<options publication_name="UserMode_Component" use_legacy_network_layer="true"/>
+				<client_server use_encryption="false"/>
+			</network>
+		</server>
+		<web>
+			<remote>
+				<configuration allow_ssl="false" session_mode="2" automatic_session_management="true"/>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<cache use_4d_web_cache="false"/>
+					<filters allow_4dsync_urls="true"/>
+				</options>
+				<misc/>
+			</remote>
+			<standalone_server>
+				<log>
+					<backup daily="" hourly="" monthly="" size="0" weekly=""/>
+				</log>
+				<options>
+					<web_processes timeout_for_inactives="5"/>
+					<cache use_4d_web_cache="false"/>
+					<filters allow_4dsync_urls="true"/>
+				</options>
+				<configuration session_mode="2" automatic_session_management="true"/>
+				<misc/>
+			</standalone_server>
+		</web>
+		<general startup_environnement="0">
+			<mover always_display_dialog="2"/>
+		</general>
+		<database>
+			<misc standard_xpath="false"/>
+		</database>
+		<deployment>
+			<options/>
+		</deployment>
+		<php ip_address="127.0.0.1"/>
+	</com.4d>
+</preferences>

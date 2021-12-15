@@ -1,0 +1,1 @@
+   ----------------------------------------------------     Anwender (OS): Thomas Maul     Datum und Zeit: 26.02.09     ----------------------------------------------------     Methode: UserMode_Init     Internal - handles necessary variable initialisation           

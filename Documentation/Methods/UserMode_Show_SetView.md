@@ -1,0 +1,1 @@
+   UserMode_Show_SetView (viewNo; viewsObject)     UserMode_Show_SetView (longint; object)          DESCRIPTION       Set the listbox up for the view that is being requested.      

@@ -1,0 +1,1 @@
+   Dialog_AskForOneChange (tablePtr) : assignmentObj     Dialog_AskForOneChange (pointer) : object          DESCRIPTION       Shows a dialog that allows the user to specifies       the detail of the assign statement they want to        use.      

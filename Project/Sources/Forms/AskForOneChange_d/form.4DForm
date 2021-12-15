@@ -1,0 +1,258 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 515,
+	"windowMinHeight": 225,
+	"width": 515,
+	"height": 225,
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onActivate"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "US Letter",
+		"paperWidth": "612pt",
+		"paperHeight": "792pt"
+	},
+	"pages": [
+		null,
+		{
+			"objects": {
+				"PopUp Drop Down": {
+					"type": "dropdown",
+					"top": 40,
+					"left": 126,
+					"width": 356,
+					"height": 23,
+					"dataSource": "at_UserMode_FieldNames",
+					"class": "Default",
+					"method": "ObjectMethods/PopUp Drop Down.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"top": 43,
+					"left": 27,
+					"width": 91,
+					"height": 17,
+					"textAlign": "right",
+					"fontFamily": "System Font",
+					"fontSize": 13,
+					"text": "Field:"
+				},
+				"at_fld": {
+					"type": "dropdown",
+					"top": 100,
+					"left": 126,
+					"width": 229,
+					"height": 23,
+					"dataSource": "at_fld",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text1": {
+					"type": "text",
+					"top": 101,
+					"left": 27,
+					"width": 91,
+					"height": 17,
+					"textAlign": "right",
+					"fontFamily": "System Font",
+					"fontSize": 13,
+					"text": "New Value:"
+				},
+				"Button": {
+					"type": "button",
+					"top": 183,
+					"left": 282,
+					"width": 98,
+					"height": 29,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "Button",
+					"action": "cancel",
+					"shortcutKey": "[Esc]",
+					"text": "Cancel",
+					"focusable": false,
+					"events": [
+						"onClick"
+					]
+				},
+				"Button1": {
+					"type": "button",
+					"top": 183,
+					"left": 396,
+					"width": 108,
+					"height": 29,
+					"sizingX": "move",
+					"sizingY": "move",
+					"dataSource": "bContinue",
+					"shortcutKey": "[Enter]",
+					"text": "Continue",
+					"focusable": false,
+					"defaultButton": true,
+					"method": "ObjectMethods/Button1.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"vr_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 154,
+					"height": 17,
+					"dataSource": "vr_fld",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vl_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 154,
+					"height": 17,
+					"dataSource": "vl_fld",
+					"dataSourceTypeHint": "number",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vd_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 104,
+					"height": 17,
+					"dataSource": "vd_fld",
+					"dataSourceTypeHint": "date",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vh_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 104,
+					"height": 17,
+					"dataSource": "vh_fld",
+					"dataSourceTypeHint": "time",
+					"contextMenu": "none",
+					"timeFormat": "hh_mm_ss",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"vt_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 354,
+					"height": 67,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "vt_fld",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"va_fld": {
+					"type": "input",
+					"top": 101,
+					"left": 126,
+					"width": 224,
+					"height": 17,
+					"dataSource": "va_fld",
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text2": {
+					"type": "text",
+					"top": 10,
+					"left": 10,
+					"width": 491,
+					"height": 17,
+					"fontTheme": "main",
+					"text": "<<>_tableName> Field Change Definition"
+				},
+				"rb_customValue": {
+					"type": "radio",
+					"top": 67,
+					"left": 126,
+					"width": 163,
+					"height": 24,
+					"text": "Use a Custom Value",
+					"focusable": false,
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/rb_customValue.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"rb_fromField": {
+					"type": "radio",
+					"top": 67,
+					"left": 294,
+					"width": 207,
+					"height": 24,
+					"text": "Value From Another Field",
+					"focusable": false,
+					"radioGroup": "Group2",
+					"method": "ObjectMethods/rb_fromField.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"anotherField_fld": {
+					"type": "dropdown",
+					"top": 100,
+					"left": 126,
+					"width": 356,
+					"height": 23,
+					"dataSource": "at_UserMode_FieldNames_COPY",
+					"class": "Default",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"groups": {
+			"Group2": [
+				"rb_customValue",
+				"rb_fromField"
+			]
+		}
+	}
+}

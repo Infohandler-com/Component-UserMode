@@ -1,0 +1,22 @@
+﻿{
+	"author": "Dani Beaubien",
+	"copyrights": "n/a; modifed open source",
+	"version": "build 20211012",
+	"buildDate": "2021-10-12",
+	"url": "http://infohandler.com",
+	"manifestFormatVersion": "1.0",
+	"buildWith4DVersion": "v19 final (build 271738)",
+	"methodList": [
+		"UserMode_Access",
+		"UserMode_AddSpecialAction",
+		"UserMode_AddSpecialQuery",
+		"UserMode_AddUtilityMenuItem",
+		"UserMode_ExecuteFldAssignments",
+		"UserMode_Forms",
+		"UserMode_GetAssignmentUserStr",
+		"UserMode_GetCurrentTable",
+		"UserMode_SetExecuteCallback",
+		"UserMode_SetViewCallback",
+		"UserMode_Show"
+	]
+}

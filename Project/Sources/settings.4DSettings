@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><preferences stamp="14">
+<?xml version="1.0" encoding="UTF-8"?><preferences stamp="16">
 	<com.4d>
 		<compiler>
-			<options compilation_path="3" fat_binary="true"/>
-			<typage default_for_numeric="1"/>
+			<options compilation_path="3" fat_binary="true" target="all"/>
+			<typage default_for_button="2" default_for_numeric="2"/>
 		</compiler>
 		<interface>
 			<user print_progress="false"/>
@@ -16,7 +16,7 @@
 		</server>
 		<web>
 			<remote>
-				<configuration allow_ssl="false" session_mode="2" automatic_session_management="true"/>
+				<configuration allow_ssl="false" automatic_session_management="true" session_mode="2"/>
 				<options>
 					<web_processes timeout_for_inactives="5"/>
 					<cache use_4d_web_cache="false"/>
@@ -33,7 +33,7 @@
 					<cache use_4d_web_cache="false"/>
 					<filters allow_4dsync_urls="true"/>
 				</options>
-				<configuration session_mode="2" automatic_session_management="true"/>
+				<configuration automatic_session_management="true" session_mode="2"/>
 				<misc/>
 			</standalone_server>
 		</web>

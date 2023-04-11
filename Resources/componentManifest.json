@@ -1,11 +1,11 @@
 ﻿{
 	"author": "Dani Beaubien",
 	"copyrights": "n/a; modifed open source",
-	"version": "build 20211214",
-	"buildDate": "2021-12-14",
+	"version": "build 20230411",
+	"buildDate": "2023-04-11",
 	"url": "http://infohandler.com",
 	"manifestFormatVersion": "1.0",
-	"buildWith4DVersion": "v18 R6 final (build 264867)",
+	"buildWith4DVersion": "v19.6 final (build 285599)",
 	"methodList": [
 		"UserMode_Access",
 		"UserMode_AddSpecialAction",

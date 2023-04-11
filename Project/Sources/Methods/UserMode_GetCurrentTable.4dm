@@ -1,4 +1,4 @@
-//%attributes = {"invisible":true,"shared":true}
+//%attributes = {"invisible":true,"shared":true,"preemptive":"capable"}
 // UserMode_GetCurrentTable () : tableNo
 // UserMode_GetCurrentTable () : longint
 // 

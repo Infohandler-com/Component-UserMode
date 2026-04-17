@@ -7,22 +7,18 @@
 // Internal - handles necessary variable initialisation
 // 
 //
-C_LONGINT:C283($1; $processId)  // Optional, if supplied, copies vars from that process
+#DECLARE($processId : Integer)  // Optional, if supplied, copies vars from that process
 // ----------------------------------------------------
 
-If (Count parameters:C259=1)
-	$processId:=$1
-End if 
+var <>_userMakingChange; <>_reasonForChange; UserModeFormula : Text
+var $maxtables; iUserMode_CurrentTable : Integer
+var $i : Integer
 
-C_TEXT:C284(<>_userMakingChange; <>_reasonForChange; UserModeFormula)
-C_LONGINT:C283($maxtables; iUserMode_CurrentTable)
-C_LONGINT:C283($i)
-
-C_BOOLEAN:C305(bUserMode_Init)
+var bUserMode_Init : Boolean
 If (Not:C34(bUserMode_Init)) | ($processId#0)
 	bUserMode_Init:=True:C214
 	
-	C_OBJECT:C1216(UserMode_queryObj; UserMode_actionObj)
+	var UserMode_queryObj; UserMode_actionObj : Object
 	If ($processId=0)
 		UserMode_queryObj:=JSON Parse:C1218("{}")
 		UserMode_actionObj:=JSON Parse:C1218("{}")
@@ -31,7 +27,7 @@ If (Not:C34(bUserMode_Init)) | ($processId#0)
 		GET PROCESS VARIABLE:C371($processId; UserMode_actionObj; UserMode_actionObj)
 	End if 
 	
-	$maxtables:=Get last table number:C254
+	$maxtables:=Last table number:C254
 	ARRAY BOOLEAN:C223(ar_UserMode_Show; $maxtables)
 	ARRAY BOOLEAN:C223(ar_UserMode_Report; $maxtables)
 	ARRAY BOOLEAN:C223(ar_UserMode_Delete; $maxtables)
@@ -71,7 +67,7 @@ If (Not:C34(bUserMode_Init)) | ($processId#0)
 		GET PROCESS VARIABLE:C371($processId; ar_UserMode_Forms; ar_UserMode_Forms)
 	End if 
 	
-	C_TEXT:C284(at_UserMode_ExecuteCallBack; at_UserMode_ViewCallBack)
+	var at_UserMode_ExecuteCallBack; at_UserMode_ViewCallBack : Text
 	at_UserMode_ExecuteCallBack:=""
 	at_UserMode_ViewCallBack:=""
 	If ($processId#0)

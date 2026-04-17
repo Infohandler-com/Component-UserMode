@@ -9,10 +9,10 @@
 // 
 // Parameter  -  none
 // ----------------------------------------------------
-C_LONGINT:C283($i)
-C_LONGINT:C283($fieldcounter)
-C_TEXT:C284($result)
-C_TEXT:C284($field)
+var $i : Integer
+var $fieldcounter : Integer
+var $result : Text
+var $field : Text
 
 
 COPY SET:C600("UserSet"; "$myset")

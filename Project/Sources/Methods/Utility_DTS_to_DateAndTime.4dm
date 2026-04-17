@@ -10,7 +10,7 @@
 //   Created by: DB (10/07/2016)
 // ----------------------------------------------------
 
-C_LONGINT:C283($vl_dts)
+var $vl_dts : Integer
 $vl_dts:=Num:C11(Request:C163("DTS Number to convert:"; ""; "Get Date & Time"; "Cancel"))
 Case of 
 	: (OK=0)
@@ -22,8 +22,8 @@ Case of
 End case 
 
 If ($vl_dts>0)
-	C_DATE:C307($vd)
-	C_TIME:C306($vh)
+	var $vd : Date
+	var $vh : Time
 	$vd:=TS_GetDate($vl_dts)
 	$vh:=TS_GetTime($vl_dts)
 	

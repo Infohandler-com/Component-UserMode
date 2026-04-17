@@ -1,18 +1,14 @@
 //%attributes = {"invisible":true}
 // UserMode_Show_SetView (viewNo; viewsObject)
-// UserMode_Show_SetView (longint; object)
 // 
 // DESCRIPTION
 //   Set the listbox up for the view that is being requested.
 //
-C_LONGINT:C283($1; $vl_viewNo)
-C_OBJECT:C1216($2; $vo_views)
+#DECLARE($vl_viewNo : Integer; $vo_views : Object)
 // ----------------------------------------------------
 // HISTORY
 //   Created by: DB (09/11/2016)
 // ----------------------------------------------------
-
-$vl_viewNo:=$1
 
 LISTBOX DELETE COLUMN:C830(*; "Listbox"; 1; LISTBOX Get number of columns:C831(*; "Listbox"))
 LISTBOX SET TABLE SOURCE:C1013(*; "Listbox"; iUserMode_CurrentTable)
@@ -23,8 +19,8 @@ OB GET ARRAY:C1229(vo_viewDefnObject; "views"; $ao_oneView)
 ARRAY POINTER:C280($ap_viewFields; 0)
 OB GET ARRAY:C1229($ao_oneView{$vl_viewNo}; "viewFieldPtrs"; $ap_viewFields)
 
-C_LONGINT:C283($counter; $i; $fieldType)
-C_POINTER:C301($Fieldptr; $Headerptr)
+var $counter; $i; $fieldType : Integer
+var $Fieldptr; $Headerptr : Pointer
 $counter:=1
 For ($i; 1; Size of array:C274($ap_viewFields))
 	If ($i<=100)

@@ -1,39 +1,27 @@
 //%attributes = {"invisible":true}
 // AskForOneChange_InitFieldArrays (parm1, parm2) : result
-// AskForOneChange_InitFieldArrays (parm1, parm2) : result
 //
-// DESCRIPTION
-//   
-//
-C_LONGINT:C283($1; $assignmentTableNo)
-C_POINTER:C301($2; $fieldNameArrPtr)
-C_POINTER:C301($3; $fieldNoArrPtr)
-C_POINTER:C301($4; $fieldTypeArrPtr)
-// ----------------------------------------------------
-// HISTORY
-//   Created by: Dani Beaubien (07/28/2017)
+#DECLARE($assignmentTableNo : Integer\
+; $fieldNameArrPtr : Pointer\
+; $fieldNoArrPtr : Pointer\
+; $fieldTypeArrPtr : Pointer)
 // ----------------------------------------------------
 
 If (Asserted:C1132(Count parameters:C259=4))
-	$assignmentTableNo:=$1
-	$fieldNameArrPtr:=$2
-	$fieldNoArrPtr:=$3
-	$fieldTypeArrPtr:=$4
-	
 	Array_Empty($fieldNameArrPtr)
 	Array_Empty($fieldNoArrPtr)
 	Array_Empty($fieldTypeArrPtr)
 	
-	C_LONGINT:C283($i)
-	For ($i; 1; Get last field number:C255($assignmentTableNo))
+	var $i : Integer
+	For ($i; 1; Last field number:C255($assignmentTableNo))
 		If (Is field number valid:C1000($assignmentTableNo; $i))
-			C_POINTER:C301($fieldPtr)
+			var $fieldPtr : Pointer
 			$fieldPtr:=Field:C253($assignmentTableNo; $i)
 			
-			C_TEXT:C284($vt_fieldName)
+			var $vt_fieldName : Text
 			$vt_fieldName:=Field name:C257($fieldPtr)
 			
-			C_LONGINT:C283($vl_fieldType; $vl_fieldLength)
+			var $vl_fieldType; $vl_fieldLength : Integer
 			$vl_fieldType:=Type:C295($fieldPtr->)
 			Case of 
 				: ($vl_fieldType=Is boolean:K8:9)
@@ -42,7 +30,7 @@ If (Asserted:C1132(Count parameters:C259=4))
 				: ($vl_fieldType=Is longint:K8:6) | ($vl_fieldType=Is integer:K8:5) | ($vl_fieldType=Is integer 64 bits:K8:25)
 					$vt_fieldName:=$vt_fieldName+" (Integer)"
 					
-				: ($vl_fieldType=Is real:K8:4) | ($vl_fieldType=_o_Is float:K8:26)
+				: ($vl_fieldType=Is real:K8:4)
 					$vt_fieldName:=$vt_fieldName+" (Float)"
 					
 				: ($vl_fieldType=Is date:K8:7)

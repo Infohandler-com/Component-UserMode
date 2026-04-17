@@ -5,6 +5,8 @@
 //   Supported formats: mm, m1, month, mon, dd, d1, day, dayShort, yyyy, yy
 //   Defaults to "mm/dd/yyyy".
 //   If a date of !00/00/00! is passed then a blank string is returned.
+//
+#DECLARE($date2Convert : Date; $dateString : Text) : Text
 If (False:C215)
 	// ===============================================================
 	// ---- PARAMETERS AND RESULTS ----
@@ -31,15 +33,10 @@ If (False:C215)
 	//   2000/03/21   DB   Modified to include the new header formating
 	// ===============================================================
 End if 
-//#Start method
 
-C_DATE:C307($1; $date2Convert)
-C_TEXT:C284($2; $0; $dateString)
-C_LONGINT:C283($Day; $Month; $Year; $WeekDay)
-$date2Convert:=$1
-If (Count parameters:C259>=2)
-	$dateString:=$2
-End if 
+
+
+var $Day; $Month; $Year; $WeekDay : Integer
 
 If ($dateString="")
 	$dateString:="mm/dd/yyyy"
@@ -54,7 +51,7 @@ Else
 	$Year:=Year of:C25($date2Convert)
 	$WeekDay:=Day number:C114($date2Convert)
 	
-	C_TEXT:C284($DayStr; $DayStr2; $MonthStr; $MonthStr2)
+	var $DayStr; $DayStr2; $MonthStr; $MonthStr2 : Text
 	$DayStr:=String:C10($Day)
 	$DayStr2:=String:C10($Day; "00")
 	$MonthStr:=String:C10($Month; "00")
@@ -136,6 +133,4 @@ Else
 	
 End if 
 
-$0:=$dateString
-
-//#End method
+return $dateString

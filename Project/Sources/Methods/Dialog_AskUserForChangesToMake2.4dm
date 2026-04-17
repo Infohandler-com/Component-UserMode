@@ -8,14 +8,15 @@
 // HISTORY
 //   Created by: DB (10/11/2016)
 // ----------------------------------------------------
+#DECLARE() : Object
 
-C_OBJECT:C1216($0; userMode_fieldChangeDetails)
+var userMode_fieldChangeDetails : Object
 userMode_fieldChangeDetails:=JSON Parse:C1218("{}")
 
-C_LONGINT:C283($vl_winRef)
+var $vl_winRef : Integer
 $vl_winRef:=Open form window:C675("AskUserForChangesToMake_OLD")
 SET WINDOW TITLE:C213("Update Field on Records")
 DIALOG:C40("AskUserForChangesToMake_OLD")
 CLOSE WINDOW:C154($vl_winRef)
 
-$0:=userMode_fieldChangeDetails
+return userMode_fieldChangeDetails

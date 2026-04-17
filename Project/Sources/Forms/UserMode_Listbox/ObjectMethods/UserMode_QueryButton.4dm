@@ -1,13 +1,13 @@
 
-C_TEXT:C284($text)
-C_LONGINT:C283($selectedItem)
+var $text : Text
+var $selectedItem : Integer
 
 Case of 
 	: (Form event code:C388=On Clicked:K2:4)
 		QUERY:C277(Table:C252(iUserMode_CurrentTable)->)
 		
 	: (Form event code:C388=On Alternative Click:K2:36) | (Form event code:C388=On Clicked:K2:4)
-		C_TEXT:C284($tableQueryObjName)
+		var $tableQueryObjName : Text
 		$tableQueryObjName:="t"+String:C10(iUserMode_CurrentTable)
 		If (OB Is defined:C1231(UserMode_queryObj; $tableQueryObjName))
 			
@@ -19,7 +19,7 @@ Case of
 				APPEND TO ARRAY:C911($at_choices; OB Get:C1224($queryChoices{$i}; "name"))
 			End for 
 			
-			C_LONGINT:C283($i)
+			var $i : Integer
 			For ($i; 1; Size of array:C274($at_choices))
 				If ($i#1)
 					$text:=$text+";"
@@ -30,7 +30,7 @@ Case of
 			$selectedItem:=Pop up menu:C542($text)
 			
 			If ($selectedItem>0)
-				C_TEXT:C284($callbackMethod)
+				var $callbackMethod : Text
 				$callbackMethod:=OB Get:C1224($queryChoices{$selectedItem}; "callback")
 				If ($callbackMethod#"")
 					EXECUTE METHOD:C1007($callbackMethod; *; Table:C252(iUserMode_CurrentTable); $at_choices{$selectedItem})

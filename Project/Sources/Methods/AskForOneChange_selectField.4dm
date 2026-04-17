@@ -19,7 +19,7 @@ Array_Empty(->at_UserMode_FieldNames_COPY)
 COPY ARRAY:C226(al_UserMode_FieldNo; al_UserMode_FieldNo_COPY)
 COPY ARRAY:C226(at_UserMode_FieldNames; at_UserMode_FieldNames_COPY)
 
-C_LONGINT:C283($i)
+var $i : Integer
 For ($i; Size of array:C274(al_UserMode_FieldNo_COPY); 1; -1)
 	If (al_UserMode_FieldNo{$i}=al_UserMode_FieldNo{at_UserMode_FieldNames})  // Remove the same field from the dropdown
 		DELETE FROM ARRAY:C228(al_UserMode_FieldNo_COPY; $i; 1)

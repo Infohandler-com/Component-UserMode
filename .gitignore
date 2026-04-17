@@ -30,3 +30,4 @@ Settings/buildApp.4DSettings
 .DS_Store
 ehthumbs.db
 Thumbs.db
+Libraries/lib4d-arm64.dylib

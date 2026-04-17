@@ -1,11 +1,6 @@
 //%attributes = {}
-C_POINTER:C301($1; $vp_tablePtr)
-C_OBJECT:C1216($2; $vo_views)
-C_BOOLEAN:C305($0; $vb_wasHandled)
 
-$vp_tablePtr:=$1
-$vo_views:=$2
-
+#DECLARE($vp_tablePtr : Pointer; $vo_views : Object)->$vb_wasHandled : Boolean
 
 If ($vp_tablePtr=(->[bTable_1:1]))
 	ARRAY OBJECT:C1221($ao_oneView; 2)
@@ -33,8 +28,7 @@ If ($vp_tablePtr=(->[bTable_1:1]))
 	OB SET ARRAY:C1227($vo_views; "views"; $ao_oneView)
 	
 	$vb_wasHandled:=True:C214
+	
 Else 
 	$vb_wasHandled:=False:C215
 End if 
-
-$0:=$vb_wasHandled

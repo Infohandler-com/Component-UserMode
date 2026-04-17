@@ -5,21 +5,21 @@ Case of
 	: (Form event code:C388=On Clicked:K2:4)
 		UserMode_UpdateSelectedRecordSt
 		
-		C_LONGINT:C283($vlMouseX; $vlMouseY; $vlButton)
-		GET MOUSE:C468($vlMouseX; $vlMouseY; $vlButton)
+		var $vlMouseX; $vlMouseY; $vlButton : Integer
+		MOUSE POSITION:C468($vlMouseX; $vlMouseY; $vlButton)
 		If (Macintosh control down:C544 | ($vlButton=2))
 			
-			C_LONGINT:C283($col; $row)
-			C_POINTER:C301($fieldPtr)
+			var $col; $row : Integer
+			var $fieldPtr : Pointer
 			LISTBOX GET CELL POSITION:C971(UserModeLB; $col; $row; $fieldPtr)
 			If ($row>0)
-				C_TEXT:C284($varName)
-				C_LONGINT:C283($tableNo; $fieldNo)
+				var $varName : Text
+				var $tableNo; $fieldNo : Integer
 				RESOLVE POINTER:C394($fieldPtr; $varName; $tableNo; $fieldNo)
 				
 				If ($tableNo>0) & ($fieldNo>0)
-					C_LONGINT:C283($fieldType)
-					C_TEXT:C284($fieldName)
+					var $fieldType : Integer
+					var $fieldName : Text
 					$fieldType:=Type:C295($fieldPtr->)
 					$fieldName:=Field name:C257($fieldPtr)
 					
@@ -31,8 +31,8 @@ Case of
 					End if 
 					
 					// Convert the array into the pop-up menu
-					C_TEXT:C284($vtItems)
-					C_LONGINT:C283($i)
+					var $vtItems : Text
+					var $i : Integer
 					$vtItems:=""
 					For ($i; 1; Size of array:C274($at_menuItems))
 						If ($vtItems#"")
@@ -42,7 +42,7 @@ Case of
 					End for 
 					
 					// Show pop-up and handle choice
-					C_LONGINT:C283($vlUserChoice)
+					var $vlUserChoice : Integer
 					$vlUserChoice:=Pop up menu:C542($vtItems)
 					Case of 
 						: ($at_menuItems{$vlUserChoice}="Copy value")

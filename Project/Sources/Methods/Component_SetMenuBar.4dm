@@ -12,7 +12,7 @@
 //   Created by: DB (2013-10-06) - Added menu
 // ----------------------------------------------------
 
-C_TEXT:C284($_Menu_MenuBar_s; $_Menu_FileMenu_s; $_Menu_EditMenu_s; $_Menu_UtilMenu_s)
+var $_Menu_MenuBar_s; $_Menu_FileMenu_s; $_Menu_EditMenu_s; $_Menu_UtilMenu_s : Text
 ARRAY LONGINT:C221($pluginNumbers_al; 0)
 ARRAY TEXT:C222($pluginNames_at; 0)
 
@@ -82,7 +82,7 @@ End if
 If (True:C214)
 	$_Menu_UtilMenu_s:=Create menu:C408
 	
-	C_LONGINT:C283($i)
+	var $i : Integer
 	For ($i; 1; Size of array:C274(ar_UTIL_title))
 		APPEND MENU ITEM:C411($_Menu_UtilMenu_s; ar_UTIL_title{$i})
 		SET MENU ITEM METHOD:C982($_Menu_UtilMenu_s; -1; ar_UTIL_method{$i})

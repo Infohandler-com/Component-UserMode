@@ -9,7 +9,7 @@
 //   Created by: DB (10/11/2016)
 // ----------------------------------------------------
 
-C_POINTER:C301($RB_useCustomValuePtr; $RB_userValueFromFieldPtr)
+var $RB_useCustomValuePtr; $RB_userValueFromFieldPtr : Pointer
 $RB_useCustomValuePtr:=OBJECT Get data source:C1265(*; "rb_customValue")
 $RB_userValueFromFieldPtr:=OBJECT Get data source:C1265(*; "rb_fromField")
 

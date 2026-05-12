@@ -1,10 +1,10 @@
 
-C_TEXT:C284($message)
+var $message : Text
 
 If (ar_UserMode_Delete{iUserMode_CurrentTable})
 	COPY NAMED SELECTION:C331(Table:C252(iUserMode_CurrentTable)->; "myTmpNamedSet")  // Keep the current selection
 	
-	$message:=Get localized string:C991("UserMode DeleteAlert")
+	$message:=Localized string:C991("UserMode DeleteAlert")
 	$message:=Replace string:C233($message; "$1"; String:C10(Records in set:C195("UserSet")))
 	$message:=Replace string:C233($message; "$2"; Table name:C256(iUserMode_CurrentTable))
 	CONFIRM:C162($message)

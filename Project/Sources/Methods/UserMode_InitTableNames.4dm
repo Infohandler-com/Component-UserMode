@@ -9,7 +9,7 @@
 //
 // Parameter  -  none
 // ----------------------------------------------------
-C_LONGINT:C283($i)
+var $i : Integer
 
 ARRAY TEXT:C222(ar_UserMode_TableNames; 0)  // force reset
 ARRAY POINTER:C280(ar_UserMode_TablePtrs; 0)  // force reset

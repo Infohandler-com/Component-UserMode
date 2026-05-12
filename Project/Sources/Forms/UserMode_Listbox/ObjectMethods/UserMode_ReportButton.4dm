@@ -1,5 +1,5 @@
-C_TEXT:C284($text)
-C_LONGINT:C283($selectedItem)
+var $text : Text
+var $selectedItem : Integer
 
 Case of 
 	: (Form event code:C388=On Clicked:K2:4) & (ar_UserMode_Report{iUserMode_CurrentTable})
@@ -18,7 +18,7 @@ Case of
 			APPEND TO ARRAY:C911($at_choices; "Export")
 		End if 
 		
-		C_LONGINT:C283($i)
+		var $i : Integer
 		For ($i; 1; Size of array:C274($at_choices))
 			If ($i#1)
 				$text:=$text+";"
@@ -52,7 +52,7 @@ Case of
 				
 			: ($at_choices{$selectedItem}="Export")
 				If (ar_UserMode_Export{iUserMode_CurrentTable})
-					C_TEXT:C284($project)
+					var $project : Text
 					$project:="<?xml version=\"1.0\" encoding=\"UTF-8\"?><settings-import-export char_display_format=\"decimal\" encoding=\"UTF-8\" format=\"text\" platform=\"automatic\" table_no=\""+String:C10(iUserMode_CurrentTable)+"\"><text_settings delimiter_field=\"9\" delimiter_record=\"13\" with_column_title=\"false\"/><xml_setti"+"ngs export_xsl_mode=\"none\"/></settings-import-export>"
 					
 					ARRAY TEXT:C222($tableTitles; 0)

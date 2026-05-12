@@ -1,0 +1,165 @@
+{
+	"_method_": {
+		"UserMode_ExecuteFldAssignments": {
+			"Syntax": "**UserMode_ExecuteFldAssignments**( *assignmentDetailsObj* : Object )->fieldAuditObject : Object",
+			"Params": [
+				[
+					"assignmentDetailsObj",
+					"Object",
+					"->"
+				],
+				[
+					"fieldAuditObject",
+					"Object",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_Forms": {
+			"Syntax": "**UserMode_Forms**( *form_names_arr_ptr* : Pointer )",
+			"Params": [
+				[
+					"form_names_arr_ptr",
+					"Pointer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_GetAssignmentUserStr": {
+			"Syntax": "**UserMode_GetAssignmentUserStr**( *assignmentDetailsObj* : Object )->userFriendlyStr : Text",
+			"Params": [
+				[
+					"assignmentDetailsObj",
+					"Object",
+					"->"
+				],
+				[
+					"userFriendlyStr",
+					"Text",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_SetViewCallback": {
+			"Syntax": "**UserMode_SetViewCallback**( *callback* : Text )",
+			"Params": [
+				[
+					"callback",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_AddSpecialQuery": {
+			"Syntax": "**UserMode_AddSpecialQuery**( *tablePtr* : Pointer; *queryName* : Text; *callbackMethod* : Text )",
+			"Params": [
+				[
+					"tablePtr",
+					"Pointer",
+					"->"
+				],
+				[
+					"queryName",
+					"Text",
+					"->"
+				],
+				[
+					"callbackMethod",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_Access": {
+			"Syntax": "**UserMode_Access**( *accessTag* : Text; *permissionArrPtr* : Pointer )",
+			"Params": [
+				[
+					"accessTag",
+					"Text",
+					"->"
+				],
+				[
+					"permissionArrPtr",
+					"Pointer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_AddUtilityMenuItem": {
+			"Syntax": "**UserMode_AddUtilityMenuItem**( *vt_MenuItemTitle* : Text; *vt_MethodToExecute* : Text )",
+			"Params": [
+				[
+					"vt_MenuItemTitle",
+					"Text",
+					"->"
+				],
+				[
+					"vt_MethodToExecute",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_Show": {
+			"Syntax": "**UserMode_Show**( *tableNo* : Integer )",
+			"Params": [
+				[
+					"tableNo",
+					"Integer",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_SetExecuteCallback": {
+			"Syntax": "**UserMode_SetExecuteCallback**( *callBack* : Text )",
+			"Params": [
+				[
+					"callBack",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_GetCurrentTable": {
+			"Syntax": "**UserMode_GetCurrentTable**() : Integer",
+			"Params": [
+				[
+					"",
+					"Integer",
+					"<-"
+				]
+			],
+			"Summary": ""
+		},
+		"UserMode_AddSpecialAction": {
+			"Syntax": "**UserMode_AddSpecialAction**( *tablePtr* : Pointer; *actionName* : Text; *callbackMethod* : Text )",
+			"Params": [
+				[
+					"tablePtr",
+					"Pointer",
+					"->"
+				],
+				[
+					"actionName",
+					"Text",
+					"->"
+				],
+				[
+					"callbackMethod",
+					"Text",
+					"->"
+				]
+			],
+			"Summary": ""
+		}
+	}
+}

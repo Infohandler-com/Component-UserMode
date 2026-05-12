@@ -1,19 +1,19 @@
 If (Form event code:C388=On Clicked:K2:4)
 	
-	C_POINTER:C301($RB_useCustomValuePtr; $RB_userValueFromFieldPtr)
+	var $RB_useCustomValuePtr; $RB_userValueFromFieldPtr : Pointer
 	$RB_useCustomValuePtr:=OBJECT Get data source:C1265(*; "rb_customValue")
 	$RB_userValueFromFieldPtr:=OBJECT Get data source:C1265(*; "rb_fromField")
 	
-	C_LONGINT:C283($assignmentTableNo)
+	var $assignmentTableNo : Integer
 	$assignmentTableNo:=Table:C252(_assignmentTablePtr)
 	
-	C_OBJECT:C1216(_assignmentStatementDetails)
+	var _assignmentStatementDetails : Object
 	_assignmentStatementDetails:=JSON Parse:C1218("{}")
 	
-	C_TEXT:C284($userFriendlyAssignStatment)
+	var $userFriendlyAssignStatment : Text
 	$userFriendlyAssignStatment:="["+Table name:C256(_assignmentTablePtr)+"]"+Field name:C257($assignmentTableNo; al_UserMode_FieldNo{at_UserMode_FieldNames})
 	
-	C_LONGINT:C283($vl_fieldNo; $vl_fieldType)
+	var $vl_fieldNo; $vl_fieldType : Integer
 	$vl_fieldNo:=al_UserMode_FieldNo{at_UserMode_FieldNames}
 	$vl_fieldType:=al_UserMode_FieldType{at_UserMode_FieldNames}
 	
@@ -44,7 +44,7 @@ If (Form event code:C388=On Clicked:K2:4)
 				OB SET:C1220(_assignmentStatementDetails; "setToValue"; vl_fld)
 				$userFriendlyAssignStatment:=$userFriendlyAssignStatment+String:C10(vl_fld)
 				
-			: ($vl_fieldType=Is real:K8:4) | ($vl_fieldType=_o_Is float:K8:26)
+			: ($vl_fieldType=Is real:K8:4)
 				OB SET:C1220(_assignmentStatementDetails; "setToValue"; vr_fld)
 				$userFriendlyAssignStatment:=$userFriendlyAssignStatment+String:C10(vr_fld)
 				

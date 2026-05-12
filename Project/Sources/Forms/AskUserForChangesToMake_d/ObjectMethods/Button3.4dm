@@ -1,5 +1,5 @@
 If (Form event code:C388=On Clicked:K2:4)
-	C_LONGINT:C283($pos)
+	var $pos : Integer
 	$pos:=assignmentTypes
 	
 	If ($pos>0) & ($pos<=Size of array:C274(assignmentTypes))

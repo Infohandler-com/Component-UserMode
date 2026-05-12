@@ -1,9 +1,6 @@
 //%attributes = {}
-C_POINTER:C301($1; $tablePtr)
-C_TEXT:C284($2; $queryToRun)
 
-$tablePtr:=$1
-$queryToRun:=$2
+#DECLARE($tablePtr : Pointer; $queryToRun : Text)
 
 Case of 
 	: ($tablePtr=(->[bTable_1:1])) & ($queryToRun="Test1")

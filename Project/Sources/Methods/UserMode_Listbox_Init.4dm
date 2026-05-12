@@ -9,35 +9,35 @@
 //
 // Parameter  -  none
 // ----------------------------------------------------
-C_POINTER:C301($tableptr)
-C_POINTER:C301($fieldPtr)
-C_POINTER:C301($Headerptr)
-C_LONGINT:C283($countfields)
-C_LONGINT:C283($counter)
-C_LONGINT:C283($fieldNo)
-C_LONGINT:C283($fieldType)
-C_TEXT:C284($name)
+var $tableptr : Pointer
+var $fieldPtr : Pointer
+var $Headerptr : Pointer
+var $countfields : Integer
+var $counter : Integer
+var $fieldNo : Integer
+var $fieldType : Integer
+var $name : Text
 
 If (Is table number valid:C999(iUserMode_CurrentTable))
 	$tableptr:=Table:C252(iUserMode_CurrentTable)
 	CREATE EMPTY SET:C140($tableptr->; "UserSet")
 	
-	C_TEXT:C284(UserModeFormula)
+	var UserModeFormula : Text
 	UserModeFormula:=""
 	
 	
 	// ### Handle creating the table's views (default or defined)
 	If (True:C214)
-		C_TEXT:C284(at_UserMode_ViewCallBack)
-		C_BOOLEAN:C305($vb_wasHandled)
-		C_OBJECT:C1216(vo_viewDefnObject)
+		var at_UserMode_ViewCallBack : Text
+		var $vb_wasHandled : Boolean
+		var vo_viewDefnObject : Object
 		vo_viewDefnObject:=JSON Parse:C1218("{}")
 		OB SET:C1220(vo_viewDefnObject; "tableNo"; iUserMode_CurrentTable)
 		If (at_UserMode_ViewCallBack#"")
 			EXECUTE METHOD:C1007(at_UserMode_ViewCallBack; $vb_wasHandled; $tableptr; vo_viewDefnObject)
 		End if 
 		
-		C_OBJECT:C1216($defaultViewObj)
+		var $defaultViewObj : Object
 		ARRAY OBJECT:C1221($ao_oneView; 0)
 		If ($vb_wasHandled)
 			OB GET ARRAY:C1229(vo_viewDefnObject; "views"; $ao_oneView)
@@ -52,14 +52,14 @@ If (Is table number valid:C999(iUserMode_CurrentTable))
 			// Create a default view of the first 100 fields
 			ARRAY POINTER:C280($ap_viewFields; 0)
 			ARRAY TEXT:C222($fieldNamesArr; 0)
-			$countfields:=Get last field number:C255(iUserMode_CurrentTable)
+			$countfields:=Last field number:C255(iUserMode_CurrentTable)
 			$counter:=1
 			$fieldNo:=1
 			While (($fieldNo<=$countfields) & ($counter<=100))
 				If (Is field number valid:C1000(iUserMode_CurrentTable; $fieldNo))
 					$fieldPtr:=Field:C253(iUserMode_CurrentTable; $fieldNo)
-					C_LONGINT:C283($fieldType; $fieldLength)
-					C_BOOLEAN:C305($isIndexed; $isUnique)
+					var $fieldLength : Integer
+					var $isIndexed; $isUnique : Boolean
 					GET FIELD PROPERTIES:C258($fieldPtr; $fieldType; $fieldLength; $isIndexed; $isUnique)
 					
 					If (($fieldType#Is picture:K8:10) & ($fieldType#Is BLOB:K8:12) & ($fieldType#Is object:K8:27))
@@ -85,7 +85,7 @@ If (Is table number valid:C999(iUserMode_CurrentTable))
 	
 	
 	// ### Build out the view arrays
-	C_LONGINT:C283($i)
+	var $i : Integer
 	ARRAY OBJECT:C1221($ao_oneView; 0)
 	OB GET ARRAY:C1229(vo_viewDefnObject; "views"; $ao_oneView)
 	ARRAY TEXT:C222(ar_UserMode_TableViews; Size of array:C274($ao_oneView))
@@ -128,11 +128,11 @@ If (Is table number valid:C999(iUserMode_CurrentTable))
 			End if 
 		End if 
 		
-		C_TEXT:C284($tableObjName)
+		var $tableObjName : Text
 		$tableObjName:="t"+String:C10(iUserMode_CurrentTable)
 		
 		// Determine if the drop down is visible or not on the query button
-		C_TEXT:C284($formatStr)
+		var $formatStr : Text
 		ARRAY TEXT:C222($formatStrAsArray; 0)
 		$formatStr:=OBJECT Get format:C894(*; "UserMode_QueryButton")
 		Array_ConvertFromTextDelimited(->$formatStrAsArray; $formatStr; ";")

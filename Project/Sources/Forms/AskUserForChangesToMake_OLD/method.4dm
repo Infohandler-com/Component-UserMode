@@ -8,28 +8,28 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		ARRAY TEXT:C222(at_fld; 0)
-		C_REAL:C285(vr_fld)
-		C_LONGINT:C283(vl_fld)
-		C_TEXT:C284(vt_fld)
-		C_DATE:C307(vd_fld)
-		C_TIME:C306(vh_fld)
+		var vr_fld : Real
+		var vl_fld : Integer
+		var vt_fld : Text
+		var vd_fld : Date
+		var vh_fld : Time
 		
 		Component_SetMenuBar
 		
 		<>_tableName:="["+Table name:C256(UserMode_GetCurrentTable)+"]"
 		
-		C_LONGINT:C283($i)
+		var $i : Integer
 		ARRAY LONGINT:C221(al_UserMode_FieldNo; 0)
 		ARRAY TEXT:C222(at_UserMode_FieldNames; 0)
-		For ($i; 1; Get last field number:C255(UserMode_GetCurrentTable))
+		For ($i; 1; Last field number:C255(UserMode_GetCurrentTable))
 			If (Is field number valid:C1000(UserMode_GetCurrentTable; $i))
-				C_POINTER:C301($fieldPtr)
+				var $fieldPtr : Pointer
 				$fieldPtr:=Field:C253(UserMode_GetCurrentTable; $i)
 				
-				C_TEXT:C284($vt_fieldName)
+				var $vt_fieldName : Text
 				$vt_fieldName:=Field name:C257($fieldPtr)
 				
-				C_LONGINT:C283($vl_fieldType; $vl_fieldLength)
+				var $vl_fieldType; $vl_fieldLength : Integer
 				$vl_fieldType:=Type:C295($fieldPtr->)
 				Case of 
 					: ($vl_fieldType=Is boolean:K8:9)
@@ -38,7 +38,7 @@ Case of
 					: ($vl_fieldType=Is longint:K8:6) | ($vl_fieldType=Is integer:K8:5) | ($vl_fieldType=Is integer 64 bits:K8:25)
 						$vt_fieldName:=$vt_fieldName+" (Integer)"
 						
-					: ($vl_fieldType=Is real:K8:4) | ($vl_fieldType=_o_Is float:K8:26)
+					: ($vl_fieldType=Is real:K8:4)
 						$vt_fieldName:=$vt_fieldName+" (Float)"
 						
 					: ($vl_fieldType=Is date:K8:7)

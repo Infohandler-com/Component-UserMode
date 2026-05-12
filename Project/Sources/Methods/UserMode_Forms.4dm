@@ -8,19 +8,19 @@
 // Allows to specify the Form to be used for New/Double click
 // 
 // Parameter  
-C_POINTER:C301($1)
+#DECLARE($form_names_arr_ptr : Pointer)
 // $1 = ptr to text array containing form names (based on table numbers)
 // ----------------------------------------------------
 
 UserMode_Init
 
 If (Count parameters:C259=1)
-	If (Type:C295($1)=Is pointer:K8:14)
-		If (Type:C295($1->)=Text array:K8:16)
+	If (Type:C295($form_names_arr_ptr)=Is pointer:K8:14)
+		If (Type:C295($form_names_arr_ptr->)=Text array:K8:16)
 			//%W-518.1
-			COPY ARRAY:C226($1->; ar_UserMode_Forms)
+			COPY ARRAY:C226($form_names_arr_ptr->; ar_UserMode_Forms)
 			//%W+518.1
-			ARRAY TEXT:C222(ar_UserMode_Forms; Get last table number:C254)
+			ARRAY TEXT:C222(ar_UserMode_Forms; Last table number:C254)
 		End if 
 	End if 
 End if 

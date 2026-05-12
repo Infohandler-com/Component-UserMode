@@ -1,6 +1,6 @@
 If (Form event code:C388=On Clicked:K2:4)
 	
-	C_OBJECT:C1216($assignmentObj)
+	var $assignmentObj : Object
 	$assignmentObj:=Dialog_AskForOneChange(Table:C252(UserMode_GetCurrentTable))
 	
 	If (OK=1)

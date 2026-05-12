@@ -5,19 +5,19 @@ Case of
 		
 	: (Form event code:C388=On Load:K2:1)
 		ARRAY TEXT:C222(at_fld; 0)
-		C_REAL:C285(vr_fld)
-		C_LONGINT:C283(vl_fld)
-		C_TEXT:C284(vt_fld; va_fld)
-		C_DATE:C307(vd_fld)
-		C_TIME:C306(vh_fld)
+		var vr_fld : Real
+		var vl_fld : Integer
+		var vt_fld; va_fld : Text
+		var vd_fld : Date
+		var vh_fld : Time
 		
 		Component_SetMenuBar
 		<>_tableName:="["+Table name:C256(_assignmentTablePtr)+"]"
 		
-		C_LONGINT:C283($assignmentTableNo)
+		var $assignmentTableNo : Integer
 		$assignmentTableNo:=Table:C252(_assignmentTablePtr)
 		
-		C_LONGINT:C283($i)
+		var $i : Integer
 		ARRAY LONGINT:C221(al_UserMode_FieldType; 0)
 		ARRAY LONGINT:C221(al_UserMode_FieldNo; 0)
 		ARRAY TEXT:C222(at_UserMode_FieldNames; 0)

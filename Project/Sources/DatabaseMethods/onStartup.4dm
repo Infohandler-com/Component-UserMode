@@ -17,13 +17,10 @@ If (Not:C34(Is compiled mode:C492)) & (Structure file:C489(*)=Structure file:C48
 	If (Find in array:C230($at_components; "Code Analysis")>0)
 		EXECUTE METHOD:C1007("CA_OnStartup")
 	End if 
-	If (Find in array:C230($at_components; "Mainfest Generator")>0)
-		EXECUTE METHOD:C1007("Manifest_SetAuthor"; *; "Dani Beaubien")
-		EXECUTE METHOD:C1007("Manifest_SetBuildDate"; *; Current date:C33)
-		EXECUTE METHOD:C1007("Manifest_SetURL"; *; "http://infohandler.com")
-		EXECUTE METHOD:C1007("Manifest_SetCopyright"; *; "n/a; modifed open source")
-		EXECUTE METHOD:C1007("Manifest_SetVersion"; *\
-			; "build "+String:C10(Year of:C25(Current date:C33); "0000")+String:C10(Month of:C24(Current date:C33); "00")+String:C10(Day of:C23(Current date:C33); "00")\
-			; True:C214)
-	End if 
+	
+	Manifest_SetAuthor("Dani Beaubien")
+	Manifest_SetBuildDate(Current date:C33)
+	Manifest_SetURL("http://infohandler.com")
+	Manifest_SetCopyright("n/a; modifed open source")
+	Manifest_SetVersion("build "+Date2String(Current date:C33; "YYYYMMDD"); True:C214)
 End if 
